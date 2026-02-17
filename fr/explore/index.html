@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta -->
+  <title>Explorer les Recettes &mdash; 200+ Repas Mondiaux pour Enfants | ChildsFood</title>
+  <meta name="description" content="Explorez plus de 200 recettes adapt&eacute;es aux enfants de plus de 50 pays. Filtrez par r&eacute;gion, r&eacute;gime, &acirc;ge, budget et difficult&eacute;. Des repas mondiaux sains et joyeux pour toute la famille.">
+  <meta name="keywords" content="recettes pour enfants, cuisine mondiale enfants, recettes v&eacute;g&eacute;tariennes enfants, repas &eacute;conomiques familles, recettes halal enfants, recettes sans gluten enfants, cuisine du monde">
+  <meta name="author" content="ChildsFood.com">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://childsfood.com/fr/explore/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Explorer les Recettes &mdash; 200+ Repas Mondiaux pour Enfants | ChildsFood">
+  <meta property="og:description" content="Plus de 200 recettes pour enfants de plus de 50 pays. Filtrez par r&eacute;gion, r&eacute;gime, &acirc;ge et budget. Des repas mondiaux joyeux pour toute la famille.">
+  <meta property="og:url" content="https://childsfood.com/fr/explore/">
+  <meta property="og:site_name" content="ChildsFood">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&h=630&fit=crop">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Explorer les Recettes &mdash; 200+ Repas Mondiaux pour Enfants">
+  <meta name="twitter:description" content="Plus de 200 recettes pour enfants de plus de 50 pays. Filtrez par r&eacute;gion, r&eacute;gime, &acirc;ge et budget.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&h=630&fit=crop">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Explorer les Recettes — Cuisine Mondiale pour Enfants",
+    "description": "Plus de 200 recettes adaptées aux enfants de plus de 50 pays, organisées par région, régime, âge et budget.",
+    "url": "https://childsfood.com/fr/explore/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ChildsFood",
+      "url": "https://childsfood.com/"
+    },
+    "inLanguage": "fr",
+    "about": {
+      "@type": "Thing",
+      "name": "Recettes mondiales pour enfants"
+    }
+  }
+  </script>
+
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://childsfood.com/explore/">
+  <link rel="alternate" hreflang="es" href="https://childsfood.com/es/explore/">
+  <link rel="alternate" hreflang="fr" href="https://childsfood.com/fr/explore/">
+  <link rel="alternate" hreflang="x-default" href="https://childsfood.com/explore/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ===== EXPLORE HERO ===== */
+    .explore-hero {
+      position: relative;
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+      padding: var(--space-3xl) var(--space-lg);
+    }
+    .explore-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1600&h=600&fit=crop') center/cover no-repeat;
+      z-index: 0;
+    }
+    .explore-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,107,53,0.85) 0%, rgba(108,92,231,0.8) 50%, rgba(6,214,160,0.75) 100%);
+      z-index: 1;
+    }
+    .explore-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .explore-hero-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: var(--space-md);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      line-height: 1.2;
+    }
+    .explore-hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      opacity: 0.95;
+      margin-bottom: var(--space-xl);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .explore-search {
+      display: flex;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 60px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .explore-search input {
+      flex: 1;
+      border: none;
+      padding: var(--space-md) var(--space-lg);
+      font-size: 1rem;
+      font-family: 'Nunito', sans-serif;
+      color: var(--color-dark);
+      outline: none;
+      min-width: 0;
+    }
+    .explore-search input::placeholder {
+      color: var(--color-dark-gray);
+      opacity: 0.7;
+    }
+    .explore-search button {
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      padding: var(--space-md) var(--space-xl);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+    .explore-search button:hover {
+      background: var(--color-red);
+    }
+
+    /* ===== FILTER BAR ===== */
+    .filter-bar {
+      background: var(--color-cream, #faf7f2);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: var(--space-lg) 0;
+      position: sticky;
+      top: 70px;
+      z-index: 90;
+    }
+    .filter-bar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-group {
+      position: relative;
+    }
+    .filter-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background: #fff;
+      border: 2px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 10px 36px 10px 14px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-dark);
+      cursor: pointer;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+    }
+    .filter-select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(255,107,53,0.15);
+    }
+    .filter-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      margin-left: var(--space-md);
+    }
+    .filter-clear {
+      background: none;
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .filter-clear:hover {
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .filter-count {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--color-dark-gray);
+      white-space: nowrap;
+    }
+
+    /* ===== FEATURED CUISINES ROW ===== */
+    .featured-cuisines {
+      padding: var(--space-2xl) 0;
+    }
+    .featured-cuisines .section-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+    .cuisines-scroll {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-lg);
+    }
+    .cuisine-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-dark);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .cuisine-pill:hover {
+      transform: translateY(-4px);
+    }
+    .cuisine-pill-img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
+    }
+    .cuisine-pill:hover .cuisine-pill-img {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    }
+    .cuisine-pill-flag {
+      font-size: 1.5rem;
+      margin-top: var(--space-sm);
+    }
+    .cuisine-pill-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    /* ===== RECIPE GRID ===== */
+    .recipe-grid-section {
+      padding: var(--space-xl) 0 var(--space-2xl);
+    }
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+    }
+    .recipe-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .recipe-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+    .recipe-card-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .recipe-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .recipe-card:hover .recipe-card-img {
+      transform: scale(1.05);
+    }
+    .recipe-card-badges {
+      position: absolute;
+      top: var(--space-sm);
+      left: var(--space-sm);
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .recipe-badge {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      color: var(--color-dark);
+    }
+    .recipe-badge--diet {
+      background: rgba(6,214,160,0.9);
+      color: #fff;
+    }
+    .recipe-badge--region {
+      background: rgba(108,92,231,0.9);
+      color: #fff;
+    }
+    .recipe-card-body {
+      padding: var(--space-md) var(--space-lg) var(--space-lg);
+    }
+    .recipe-card-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: var(--space-xs);
+      color: var(--color-dark);
+    }
+    .recipe-card-cuisine {
+      font-size: 0.85rem;
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+    }
+    .recipe-card-meta {
+      display: flex;
+      gap: var(--space-md);
+      font-size: 0.8rem;
+      color: var(--color-dark-gray);
+      flex-wrap: wrap;
+    }
+    .recipe-card-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .recipe-card-rating {
+      margin-top: var(--space-sm);
+      font-size: 0.85rem;
+      color: var(--color-secondary);
+    }
+
+    /* ===== LOAD MORE ===== */
+    .load-more-wrap {
+      text-align: center;
+      padding: var(--space-xl) 0 var(--space-2xl);
+    }
+    .btn-load-more {
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      padding: var(--space-md) var(--space-2xl);
+      border-radius: 60px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 16px rgba(255,107,53,0.3);
+    }
+    .btn-load-more:hover {
+      background: var(--color-red);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255,107,53,0.4);
+    }
+
+    /* ===== EXPLORE BY COUNTRY ===== */
+    .explore-countries {
+      background: var(--color-cream, #faf7f2);
+      padding: var(--space-3xl) 0;
+    }
+    .countries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+    .country-chip {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: #fff;
+      padding: var(--space-sm) var(--space-md);
+      border-radius: 12px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--color-dark);
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      cursor: pointer;
+    }
+    .country-chip:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .country-chip-flag {
+      font-size: 1.3rem;
+    }
+    .country-chip-count {
+      margin-left: auto;
+      font-size: 0.75rem;
+      color: var(--color-dark-gray);
+      font-weight: 700;
+    }
+
+    /* ===== NEWSLETTER EXPLORE CTA ===== */
+    .explore-newsletter {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-purple) 100%);
+      color: #fff;
+      text-align: center;
+      padding: var(--space-3xl) var(--space-lg);
+    }
+    .explore-newsletter h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      margin-bottom: var(--space-md);
+    }
+    .explore-newsletter p {
+      font-size: 1.1rem;
+      max-width: 550px;
+      margin: 0 auto var(--space-xl);
+      opacity: 0.95;
+    }
+    .explore-newsletter-form {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.15);
+      border-radius: 60px;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .explore-newsletter-form input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: var(--space-md) var(--space-lg);
+      font-size: 1rem;
+      font-family: 'Nunito', sans-serif;
+      color: #fff;
+      outline: none;
+      min-width: 0;
+    }
+    .explore-newsletter-form input::placeholder {
+      color: rgba(255,255,255,0.7);
+    }
+    .explore-newsletter-form button {
+      background: #fff;
+      color: var(--color-primary);
+      border: none;
+      padding: var(--space-md) var(--space-xl);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      white-space: nowrap;
+      border-radius: 0 60px 60px 0;
+    }
+    .explore-newsletter-form button:hover {
+      background: var(--color-cream, #faf7f2);
+    }
+    .explore-newsletter .text-small {
+      margin-top: var(--space-md);
+      opacity: 0.7;
+      font-size: 0.85rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .cuisines-scroll {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-md);
+      }
+      .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .filter-bar {
+        position: relative;
+        top: auto;
+      }
+      .filter-bar-inner {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: var(--space-sm);
+        -webkit-overflow-scrolling: touch;
+      }
+      .filter-select {
+        font-size: 0.82rem;
+        padding: 8px 30px 8px 10px;
+        flex-shrink: 0;
+      }
+      .filter-actions {
+        margin-left: var(--space-sm);
+        flex-shrink: 0;
+      }
+      .cuisines-scroll {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+      }
+      .recipe-grid {
+        grid-template-columns: 1fr;
+      }
+      .explore-search {
+        flex-direction: column;
+        border-radius: 20px;
+      }
+      .explore-search input {
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        text-align: center;
+      }
+      .explore-search button {
+        border-radius: 0 0 20px 20px;
+        padding: var(--space-md);
+      }
+      .countries-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .explore-newsletter-form {
+        flex-direction: column;
+        border-radius: 20px;
+      }
+      .explore-newsletter-form button {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      .cuisines-scroll {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .countries-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/fr/" class="logo" aria-label="ChildsFood Accueil">
+        <div class="logo-icon" aria-hidden="true">&#127860;</div>
+        <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+        <a href="../index.html#explore" class="active">Explorer</a>
+        <a href="../index.html#meal-planner">Planificateur</a>
+        <a href="../index.html#world-map">Carte du Monde</a>
+        <a href="../index.html#academy">Petit Chef</a>
+        <a href="../index.html#stories">Histoires</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" role="navigation" aria-label="S&eacute;lecteur de langue">
+          <a href="../../explore/" class="lang-btn" aria-label="English">EN</a>
+          <a href="../../es/explore/" class="lang-btn" aria-label="Espa&ntilde;ol">ES</a>
+          <a href="../../fr/explore/" class="lang-btn active" aria-label="Fran&ccedil;ais">FR</a>
+        </div>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" role="navigation" aria-label="Navigation mobile">
+    <a href="../index.html#explore">Explorer</a>
+    <a href="../index.html#meal-planner">Planificateur de Repas</a>
+    <a href="../index.html#world-map">Carte du Monde</a>
+    <a href="../index.html#academy">Acad&eacute;mie Petit Chef</a>
+    <a href="../index.html#stories">Histoires</a>
+    <div class="lang-switcher" style="margin-top:var(--space-lg)">
+      <a href="../../explore/" class="lang-btn">EN</a>
+      <a href="../../es/explore/" class="lang-btn">ES</a>
+      <a href="../../fr/explore/" class="lang-btn active">FR</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO BANNER ============ -->
+    <section class="explore-hero" id="explore-top">
+      <div class="explore-hero-content">
+        <h1 class="explore-hero-title">Explorez la Cuisine du Monde</h1>
+        <p class="explore-hero-subtitle">Plus de 200 recettes pour enfants de plus de 50 pays, pour chaque r&eacute;gime, budget et tranche d'&acirc;ge</p>
+        <div class="explore-search">
+          <input type="text" placeholder="Rechercher recettes, cuisines, ingr&eacute;dients..." aria-label="Rechercher des recettes">
+          <button type="button">&#128269; Rechercher</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILTER BAR ============ -->
+    <section class="filter-bar" id="filters">
+      <div class="container">
+        <div class="filter-bar-inner">
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Filtrer par r&eacute;gion">
+              <option value="all">R&eacute;gion : Toutes</option>
+              <option value="africa">Afrique</option>
+              <option value="asia">Asie</option>
+              <option value="europe">Europe</option>
+              <option value="americas">Am&eacute;riques</option>
+              <option value="middle-east">Moyen-Orient</option>
+              <option value="oceania">Oc&eacute;anie</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Filtrer par r&eacute;gime">
+              <option value="all">R&eacute;gime : Tous</option>
+              <option value="vegetarian">V&eacute;g&eacute;tarien</option>
+              <option value="vegan">V&eacute;gan</option>
+              <option value="halal">Halal</option>
+              <option value="kosher">Casher</option>
+              <option value="gluten-free">Sans Gluten</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Filtrer par &acirc;ge">
+              <option value="all">&Acirc;ge : Tous</option>
+              <option value="toddler">Tout-petit</option>
+              <option value="child">Enfant</option>
+              <option value="preteen">Pr&eacute;ado</option>
+              <option value="teen">Ado</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Filtrer par budget">
+              <option value="all">Budget : Tous</option>
+              <option value="low">&euro;</option>
+              <option value="moderate">&euro;&euro;</option>
+              <option value="premium">&euro;&euro;&euro;</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Filtrer par difficult&eacute;">
+              <option value="all">Difficult&eacute; : Toutes</option>
+              <option value="simple">Simple</option>
+              <option value="moderate">Mod&eacute;r&eacute;</option>
+              <option value="advanced">Avanc&eacute;</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select" aria-label="Trier par">
+              <option value="popular">Trier : Populaire</option>
+              <option value="recent">R&eacute;cent</option>
+              <option value="quick">Rapide</option>
+              <option value="budget">&Eacute;conomique</option>
+            </select>
+          </div>
+          <div class="filter-actions">
+            <button class="filter-clear" type="button">Effacer les Filtres</button>
+            <span class="filter-count">48 recettes affich&eacute;es</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED CUISINES ROW ============ -->
+    <section class="featured-cuisines section" id="featured-cuisines">
+      <div class="container">
+        <div class="section-header">
+          <p class="text-caption" style="color:var(--color-primary)">Cuisines en Vedette</p>
+          <h2 class="text-h2">Parcourez par Cuisine</h2>
+        </div>
+        <div class="cuisines-scroll">
+          <a class="cuisine-pill" href="#" aria-label="Cuisine japonaise">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=260&fit=crop" alt="Bento japonais color&eacute; avec riz et l&eacute;gumes" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127471;&#127477;</span>
+            <span class="cuisine-pill-name">Japonaise</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine mexicaine">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=260&fit=crop" alt="Tacos mexicains frais avec garnitures color&eacute;es" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127474;&#127485;</span>
+            <span class="cuisine-pill-name">Mexicaine</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine indienne">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=260&fit=crop" alt="Dal indien vibrant avec &eacute;pices dor&eacute;es" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127470;&#127475;</span>
+            <span class="cuisine-pill-name">Indienne</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine m&eacute;diterran&eacute;enne">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=260&fit=crop" alt="Salade m&eacute;diterran&eacute;enne fra&icirc;che" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127468;&#127479;</span>
+            <span class="cuisine-pill-name">M&eacute;diterran&eacute;enne</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine ouest-africaine">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=260&fit=crop&q=80" alt="Riz jollof ouest-africain authentique" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127468;&#127469;</span>
+            <span class="cuisine-pill-name">Ouest-Africaine</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine moyen-orientale">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=260&fit=crop" alt="Plateau de falafels du Moyen-Orient" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127473;&#127463;</span>
+            <span class="cuisine-pill-name">Moyen-Orientale</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine tha&iuml;landaise">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=260&fit=crop" alt="Pad tha&iuml; aux nouilles et citron vert" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127481;&#127469;</span>
+            <span class="cuisine-pill-name">Tha&iuml;landaise</span>
+          </a>
+          <a class="cuisine-pill" href="#" aria-label="Cuisine italienne">
+            <img class="cuisine-pill-img" src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&h=260&fit=crop" alt="P&acirc;tes italiennes sauce tomate et basilic" loading="lazy" width="400" height="260">
+            <span class="cuisine-pill-flag">&#127470;&#127481;</span>
+            <span class="cuisine-pill-name">Italienne</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECIPE GRID ============ -->
+    <section class="recipe-grid-section" id="recipes">
+      <div class="container">
+        <div class="recipe-grid">
+
+          <!-- Recipe 1: Saut&eacute; Arc-en-ciel de L&eacute;gumes -->
+          <a href="../recipes/saute-arc-en-ciel-de-legumes.html" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop" alt="Saut&eacute; color&eacute; de l&eacute;gumes arc-en-ciel dans un wok" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;g&eacute;tarien</span>
+                <span class="recipe-badge recipe-badge--region">Asie</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Saut&eacute; Arc-en-ciel de L&eacute;gumes</h3>
+              <div class="recipe-card-cuisine">&#127471;&#127477; Cuisine Japonaise</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 25 min</span>
+                <span>&#127793; 6 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 4 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,9</div>
+            </div>
+          </a>
+
+          <!-- Recipe 2: Mini Tacos Mexicains aux Haricots -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop" alt="Mini tacos mexicains garnis de haricots et crudités" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;g&eacute;tarien</span>
+                <span class="recipe-badge recipe-badge--region">Am&eacute;riques</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Mini Tacos Mexicains aux Haricots</h3>
+              <div class="recipe-card-cuisine">&#127474;&#127485; Cuisine Mexicaine</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 20 min</span>
+                <span>&#127793; 7 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 3 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,8</div>
+            </div>
+          </a>
+
+          <!-- Recipe 3: Pancakes Banane et Flocons d'Avoine -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Pancakes dor&eacute;s &agrave; la banane et flocons d'avoine" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">Sans Gluten</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Pancakes Banane et Flocons d'Avoine</h3>
+              <div class="recipe-card-cuisine">&#127758; International</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 15 min</span>
+                <span>&#127793; 4 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 2 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,9</div>
+            </div>
+          </a>
+
+          <!-- Recipe 4: Soupe Japonaise Miso aux Nouilles -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&h=400&fit=crop" alt="Soupe miso japonaise fumante avec nouilles et tofu" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Asie</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Soupe Japonaise Miso aux Nouilles</h3>
+              <div class="recipe-card-cuisine">&#127471;&#127477; Cuisine Japonaise</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 20 min</span>
+                <span>&#127793; 6 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 4 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088; 4,7</div>
+            </div>
+          </a>
+
+          <!-- Recipe 5: Rago&ucirc;t Africain aux Arachides -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=400&fit=crop&q=85" alt="Rago&ucirc;t africain aux arachides servi avec du riz" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Afrique</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Rago&ucirc;t Africain aux Arachides</h3>
+              <div class="recipe-card-cuisine">&#127468;&#127469; Cuisine Ouest-Africaine</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 35 min</span>
+                <span>&#127793; 8 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 5 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,8</div>
+            </div>
+          </a>
+
+          <!-- Recipe 6: Bol M&eacute;diterran&eacute;en au Houmous -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=400&fit=crop&q=85" alt="Bol m&eacute;diterran&eacute;en avec houmous, l&eacute;gumes et c&eacute;r&eacute;ales" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;g&eacute;tarien</span>
+                <span class="recipe-badge recipe-badge--region">Europe</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Bol M&eacute;diterran&eacute;en au Houmous</h3>
+              <div class="recipe-card-cuisine">&#127468;&#127479; Cuisine M&eacute;diterran&eacute;enne</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 15 min</span>
+                <span>&#127793; 7 ingr.</span>
+                <span>&#128176; &euro;&euro;</span>
+                <span>&#128118; D&egrave;s 3 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088; 4,6</div>
+            </div>
+          </a>
+
+          <!-- Recipe 7: Dal Indien de Lentilles -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop&q=85" alt="Dal indien de lentilles dor&eacute;es avec &eacute;pices et herbes" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Asie</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Dal Indien de Lentilles</h3>
+              <div class="recipe-card-cuisine">&#127470;&#127475; Cuisine Indienne</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 30 min</span>
+                <span>&#127793; 8 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 4 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,9</div>
+            </div>
+          </a>
+
+          <!-- Recipe 8: Pizza Pita &agrave; Composer -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop" alt="Pizza pita faite maison avec garnitures color&eacute;es" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;g&eacute;tarien</span>
+                <span class="recipe-badge recipe-badge--region">Europe</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Pizza Pita &agrave; Composer</h3>
+              <div class="recipe-card-cuisine">&#127470;&#127481; Cuisine Italienne</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 15 min</span>
+                <span>&#127793; 5 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 3 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,9</div>
+            </div>
+          </a>
+
+          <!-- Recipe 9: Nouilles au Curry Tha&iuml; au Coco -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600&h=400&fit=crop&q=85" alt="Bol de nouilles au curry tha&iuml; lait de coco" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Asie</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Nouilles au Curry Tha&iuml; au Coco</h3>
+              <div class="recipe-card-cuisine">&#127481;&#127469; Cuisine Tha&iuml;landaise</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 25 min</span>
+                <span>&#127793; 8 ingr.</span>
+                <span>&#128176; &euro;&euro;</span>
+                <span>&#128118; D&egrave;s 6 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088; 4,7</div>
+            </div>
+          </a>
+
+          <!-- Recipe 10: Tajine Marocain de L&eacute;gumes -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop" alt="Tajine marocain de l&eacute;gumes servi avec couscous" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">Halal</span>
+                <span class="recipe-badge recipe-badge--region">Moyen-Orient</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Tajine Marocain de L&eacute;gumes</h3>
+              <div class="recipe-card-cuisine">&#127474;&#127462; Cuisine Marocaine</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 40 min</span>
+                <span>&#127793; 10 ingr.</span>
+                <span>&#128176; &euro;&euro;</span>
+                <span>&#128118; D&egrave;s 5 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088; 4,6</div>
+            </div>
+          </a>
+
+          <!-- Recipe 11: Bol d'A&ccedil;a&iacute; Br&eacute;silien -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&h=400&fit=crop" alt="Bol d'a&ccedil;a&iacute; br&eacute;silien avec fruits frais et granola" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Am&eacute;riques</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Bol d'A&ccedil;a&iacute; Br&eacute;silien</h3>
+              <div class="recipe-card-cuisine">&#127463;&#127479; Cuisine Br&eacute;silienne</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 10 min</span>
+                <span>&#127793; 5 ingr.</span>
+                <span>&#128176; &euro;&euro;&euro;</span>
+                <span>&#128118; D&egrave;s 2 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088;&#11088; 4,8</div>
+            </div>
+          </a>
+
+          <!-- Recipe 12: Riz et Pois des Cara&iuml;bes -->
+          <a href="#" class="recipe-card">
+            <div class="recipe-card-img-wrap">
+              <img class="recipe-card-img" src="https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=600&h=400&fit=crop" alt="Riz et pois des Cara&iuml;bes avec lait de coco" loading="lazy" width="600" height="400">
+              <div class="recipe-card-badges">
+                <span class="recipe-badge recipe-badge--diet">V&eacute;gan</span>
+                <span class="recipe-badge recipe-badge--region">Am&eacute;riques</span>
+              </div>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Riz et Pois des Cara&iuml;bes</h3>
+              <div class="recipe-card-cuisine">&#127471;&#127474; Cuisine Cara&iuml;b&eacute;enne</div>
+              <div class="recipe-card-meta">
+                <span>&#9201; 35 min</span>
+                <span>&#127793; 6 ingr.</span>
+                <span>&#128176; &euro;</span>
+                <span>&#128118; D&egrave;s 4 ans</span>
+              </div>
+              <div class="recipe-card-rating">&#11088;&#11088;&#11088;&#11088; 4,7</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOAD MORE ============ -->
+    <div class="load-more-wrap">
+      <button class="btn-load-more" type="button">&#128260; Charger Plus de Recettes</button>
+    </div>
+
+    <!-- ============ EXPLORE BY COUNTRY ============ -->
+    <section class="explore-countries" id="explore-countries">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-caption" style="color:var(--color-primary)">Explorez les Saveurs du Monde</p>
+          <h2 class="text-h2">Explorer par Pays</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:600px;margin:var(--space-md) auto 0">S&eacute;lectionnez un pays pour d&eacute;couvrir des recettes authentiques adapt&eacute;es aux enfants.</p>
+        </div>
+        <div class="countries-grid">
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127471;&#127477;</span>
+            <span>Japon</span>
+            <span class="country-chip-count">24</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127474;&#127485;</span>
+            <span>Mexique</span>
+            <span class="country-chip-count">32</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127470;&#127475;</span>
+            <span>Inde</span>
+            <span class="country-chip-count">28</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127470;&#127481;</span>
+            <span>Italie</span>
+            <span class="country-chip-count">26</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127481;&#127469;</span>
+            <span>Tha&iuml;lande</span>
+            <span class="country-chip-count">16</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127474;&#127462;</span>
+            <span>Maroc</span>
+            <span class="country-chip-count">14</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127468;&#127479;</span>
+            <span>Gr&egrave;ce</span>
+            <span class="country-chip-count">12</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127463;&#127479;</span>
+            <span>Br&eacute;sil</span>
+            <span class="country-chip-count">10</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127467;&#127479;</span>
+            <span>France</span>
+            <span class="country-chip-count">18</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127472;&#127479;</span>
+            <span>Cor&eacute;e du Sud</span>
+            <span class="country-chip-count">14</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127468;&#127469;</span>
+            <span>Ghana</span>
+            <span class="country-chip-count">10</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127473;&#127463;</span>
+            <span>Liban</span>
+            <span class="country-chip-count">12</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127466;&#127481;</span>
+            <span>&Eacute;thiopie</span>
+            <span class="country-chip-count">8</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127464;&#127475;</span>
+            <span>Chine</span>
+            <span class="country-chip-count">20</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127477;&#127466;</span>
+            <span>P&eacute;rou</span>
+            <span class="country-chip-count">8</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127481;&#127479;</span>
+            <span>Turquie</span>
+            <span class="country-chip-count">12</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127486;&#127475;</span>
+            <span>Vi&ecirc;t Nam</span>
+            <span class="country-chip-count">10</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127471;&#127474;</span>
+            <span>Jama&iuml;que</span>
+            <span class="country-chip-count">8</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127466;&#127480;</span>
+            <span>Espagne</span>
+            <span class="country-chip-count">14</span>
+          </a>
+          <a href="#" class="country-chip">
+            <span class="country-chip-flag">&#127475;&#127468;</span>
+            <span>Nig&eacute;ria</span>
+            <span class="country-chip-count">12</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER CTA ============ -->
+    <section class="explore-newsletter" id="newsletter">
+      <div class="container">
+        <h2>Recevez de Nouvelles Recettes Chaque Semaine</h2>
+        <p>Rejoignez plus de 50 000 familles et recevez des plans de repas hebdomadaires, de nouvelles recettes du monde entier et des conseils de l'Acad&eacute;mie Petit Chef directement dans votre bo&icirc;te mail.</p>
+        <form class="explore-newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='&#10004; Inscrit !'; this.querySelector('button').style.background='var(--color-green)'; this.querySelector('button').style.color='#fff';">
+          <input type="email" placeholder="Entrez votre adresse e-mail" aria-label="Adresse e-mail" required>
+          <button type="submit">S'abonner Gratuitement</button>
+        </form>
+        <p class="text-small">Pas de spam. D&eacute;sabonnement &agrave; tout moment. Nous respectons votre bo&icirc;te mail autant que votre famille.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/fr/" class="logo">
+            <div class="logo-icon">&#127860;</div>
+            <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+          </a>
+          <p>La plateforme alimentaire pour enfants la plus diversifi&eacute;e culturellement au monde. Des repas sains, joyeux et mondiaux pour chaque famille et chaque budget.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <a href="../index.html#explore">7 Piliers</a>
+          <a href="../index.html#world-map">Carte Alimentaire Mondiale</a>
+          <a href="../index.html#cuisines">Cuisines</a>
+          <a href="../index.html#meal-planner">Planificateur de Repas</a>
+          <a href="../index.html#budget">Plans &Eacute;conomiques</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Apprendre</h4>
+          <a href="../index.html#academy">Acad&eacute;mie Petit Chef</a>
+          <a href="../index.html#happy-plate">Assiette Joyeuse</a>
+          <a href="../index.html#stories">Histoires &amp; Recherches</a>
+          <a href="#">Guides Nutritionnels</a>
+          <a href="#">Aide pour Mangeurs Difficiles</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Langues</h4>
+          <a href="../../">&#127468;&#127463; English</a>
+          <a href="../../es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="../../fr/">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChildsFood.com &mdash; Sain. Joyeux. Mondial. Inspirant.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">&#128247;</a>
+          <a href="#" aria-label="YouTube">&#9654;</a>
+          <a href="#" aria-label="Pinterest">&#128204;</a>
+          <a href="#" aria-label="Facebook">&#102;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

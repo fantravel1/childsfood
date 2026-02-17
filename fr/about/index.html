@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta -->
+  <title>&Agrave; Propos de ChildsFood &mdash; Notre Mission d'&Eacute;lever des Enfants Heureux et en Bonne Sant&eacute;</title>
+  <meta name="description" content="D&eacute;couvrez la mission de ChildsFood.com : cr&eacute;er la plateforme alimentaire pour enfants la plus diversifi&eacute;e culturellement au monde. Les habitudes alimentaires saines commencent par la joie, la culture et l'autonomie.">
+  <meta name="keywords" content="mission childsfood, alimentation enfants, nutrition enfantine mondiale, repas sains enfants, plateforme alimentaire culturelle, &agrave; propos childsfood">
+  <meta name="author" content="ChildsFood.com">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://childsfood.com/fr/about/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="&Agrave; Propos de ChildsFood &mdash; Notre Mission d'&Eacute;lever des Enfants Heureux et en Bonne Sant&eacute;">
+  <meta property="og:description" content="ChildsFood.com est la plateforme alimentaire pour enfants la plus diversifi&eacute;e culturellement au monde. Les habitudes alimentaires saines commencent par la joie, la culture et l'autonomie.">
+  <meta property="og:url" content="https://childsfood.com/fr/about/">
+  <meta property="og:site_name" content="ChildsFood">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="&Agrave; Propos de ChildsFood &mdash; Notre Mission d'&Eacute;lever des Enfants Heureux et en Bonne Sant&eacute;">
+  <meta name="twitter:description" content="ChildsFood.com est la plateforme alimentaire pour enfants la plus diversifi&eacute;e culturellement au monde.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "\u00c0 Propos de ChildsFood",
+    "description": "La mission de ChildsFood : cr\u00e9er la plateforme alimentaire pour enfants la plus diversifi\u00e9e culturellement au monde. Les habitudes alimentaires saines commencent par la joie, la culture et l'autonomie.",
+    "url": "https://childsfood.com/fr/about/",
+    "inLanguage": "fr",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ChildsFood",
+      "url": "https://childsfood.com/"
+    }
+  }
+  </script>
+
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://childsfood.com/about/">
+  <link rel="alternate" hreflang="es" href="https://childsfood.com/es/about/">
+  <link rel="alternate" hreflang="fr" href="https://childsfood.com/fr/about/">
+  <link rel="alternate" hreflang="x-default" href="https://childsfood.com/about/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* ============ ABOUT PAGE — INLINE STYLES ============ */
+
+    /* --- Hero --- */
+    .about-hero {
+      position: relative;
+      min-height: 45vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: calc(var(--header-height) + var(--space-3xl)) var(--space-lg) var(--space-3xl);
+      overflow: hidden;
+      color: var(--color-white);
+    }
+
+    .about-hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .about-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(26,26,26,0.55) 0%, rgba(26,26,26,0.75) 100%);
+    }
+
+    .about-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: fadeInUp 0.8s ease both;
+    }
+
+    .about-hero-content h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 5vw, 3.2rem);
+      color: var(--color-white);
+      line-height: 1.2;
+      margin-bottom: var(--space-lg);
+    }
+
+    .about-hero-content .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* --- Vision Statement --- */
+    .vision-section {
+      background: var(--color-white);
+      padding: var(--space-4xl) 0;
+    }
+
+    .vision-quote {
+      max-width: 800px;
+      margin: 0 auto var(--space-3xl);
+      text-align: center;
+    }
+
+    .vision-quote blockquote {
+      font-family: var(--font-accent);
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      color: var(--color-primary);
+      line-height: 1.5;
+      position: relative;
+      padding: var(--space-xl) var(--space-2xl);
+    }
+
+    .vision-quote blockquote::before,
+    .vision-quote blockquote::after {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      color: var(--color-primary);
+      opacity: 0.2;
+      position: absolute;
+      line-height: 1;
+    }
+
+    .vision-quote blockquote::before {
+      content: '\201C';
+      top: -10px;
+      left: 0;
+    }
+
+    .vision-quote blockquote::after {
+      content: '\201D';
+      bottom: -30px;
+      right: 0;
+    }
+
+    .vision-columns {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 640px) {
+      .vision-columns {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .vision-col {
+      padding: var(--space-xl);
+      border-radius: var(--radius-lg);
+    }
+
+    .vision-col.is-not {
+      background: #FFF0F0;
+      border-left: 4px solid var(--color-red);
+    }
+
+    .vision-col.is-yes {
+      background: #F0FFF4;
+      border-left: 4px solid var(--color-green);
+    }
+
+    .vision-col h3 {
+      font-size: 1.2rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .vision-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .vision-col ul li {
+      padding: var(--space-sm) 0;
+      padding-left: var(--space-xl);
+      position: relative;
+      font-size: 0.95rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+    }
+
+    .vision-col.is-not ul li::before {
+      content: '\2717';
+      position: absolute;
+      left: 0;
+      color: var(--color-red);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .vision-col.is-yes ul li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: var(--color-green);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    /* --- Market Gap --- */
+    .market-gap-section {
+      background: var(--color-off-white);
+      padding: var(--space-4xl) 0;
+    }
+
+    .gap-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      max-width: 1000px;
+      margin: var(--space-2xl) auto 0;
+    }
+
+    @media (min-width: 640px) {
+      .gap-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .gap-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gap-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .gap-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .gap-card ul li {
+      padding: var(--space-sm) 0;
+      padding-left: var(--space-xl);
+      position: relative;
+      font-size: 0.93rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+      border-bottom: 1px solid var(--color-light-gray);
+    }
+
+    .gap-card ul li:last-child {
+      border-bottom: none;
+    }
+
+    .gap-card.exists ul li::before {
+      content: '\25CF';
+      position: absolute;
+      left: 0;
+      color: var(--color-mid-gray);
+      font-size: 0.7rem;
+      top: calc(var(--space-sm) + 5px);
+    }
+
+    .gap-card.missing ul li::before {
+      content: '\2605';
+      position: absolute;
+      left: 0;
+      color: var(--color-primary);
+      font-size: 0.85rem;
+      top: calc(var(--space-sm) + 3px);
+    }
+
+    .gap-card.missing {
+      border: 2px solid var(--color-primary);
+      background: linear-gradient(135deg, #FFF8F0, #FFF3E4);
+    }
+
+    /* --- Core Principles --- */
+    .principles-section {
+      background: var(--color-white);
+      padding: var(--space-4xl) 0;
+    }
+
+    .principle-card {
+      background: var(--color-off-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all var(--transition-med);
+      border: 2px solid transparent;
+      height: 100%;
+    }
+
+    .principle-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .principle-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto var(--space-md);
+    }
+
+    .principle-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .principle-card p {
+      font-size: 0.9rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+    }
+
+    /* --- 7 Pillars Expanded --- */
+    .pillars-expanded-section {
+      background: linear-gradient(135deg, var(--color-charcoal), #1a1a2e);
+      color: var(--color-white);
+      padding: var(--space-4xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pillars-expanded-section::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255,107,53,0.12), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .pillars-expanded-section h2 {
+      color: var(--color-white);
+    }
+
+    .pillar-expanded {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+      padding: var(--space-xl);
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all var(--transition-med);
+    }
+
+    .pillar-expanded:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateX(5px);
+    }
+
+    @media (min-width: 640px) {
+      .pillar-expanded {
+        grid-template-columns: 80px 1fr;
+        align-items: start;
+      }
+    }
+
+    .pillar-expanded-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .pillar-expanded-content h3 {
+      color: var(--color-accent);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+
+    .pillar-expanded-content p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* --- Stats / By the Numbers --- */
+    .stats-section {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      color: var(--color-white);
+      padding: var(--space-4xl) 0;
+      text-align: center;
+    }
+
+    .stats-section h2 {
+      color: var(--color-white);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-xl);
+      max-width: 900px;
+      margin: var(--space-2xl) auto 0;
+    }
+
+    @media (min-width: 640px) {
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 960px) {
+      .stats-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+
+    .stat-item {
+      padding: var(--space-lg);
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3rem);
+      display: block;
+      line-height: 1;
+      margin-bottom: var(--space-sm);
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* --- Accessibility & Inclusion --- */
+    .accessibility-section {
+      background: var(--color-white);
+      padding: var(--space-4xl) 0;
+    }
+
+    .accessibility-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      max-width: 1000px;
+      margin: var(--space-2xl) auto 0;
+    }
+
+    @media (min-width: 640px) {
+      .accessibility-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 960px) {
+      .accessibility-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .access-card {
+      background: var(--color-off-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      transition: all var(--transition-med);
+      border: 2px solid transparent;
+    }
+
+    .access-card:hover {
+      border-color: var(--color-secondary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .access-card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--color-secondary), var(--color-green));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .access-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .access-card p {
+      font-size: 0.9rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+    }
+
+    /* --- Newsletter About --- */
+    .about-newsletter {
+      background: linear-gradient(135deg, var(--color-secondary), var(--color-green));
+      color: var(--color-white);
+      text-align: center;
+      padding: var(--space-4xl) 0;
+    }
+
+    .about-newsletter h2 {
+      color: var(--color-white);
+    }
+
+    .about-newsletter p {
+      opacity: 0.9;
+      max-width: 600px;
+      margin: var(--space-md) auto var(--space-xl);
+    }
+
+    .about-newsletter .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .about-newsletter .newsletter-input {
+      padding: 1rem 1.5rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: var(--radius-xl);
+      background: rgba(255,255,255,0.15);
+      color: var(--color-white);
+      font-size: 1rem;
+      font-family: var(--font-body);
+    }
+
+    .about-newsletter .newsletter-input::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .about-newsletter .newsletter-input:focus {
+      outline: none;
+      border-color: var(--color-white);
+      background: rgba(255,255,255,0.2);
+    }
+
+    @media (min-width: 640px) {
+      .about-newsletter .newsletter-form {
+        flex-direction: row;
+      }
+      .about-newsletter .newsletter-input {
+        flex: 1;
+      }
+    }
+
+    /* --- Breadcrumb --- */
+    .breadcrumb {
+      padding: calc(var(--header-height) + var(--space-md)) var(--space-lg) 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+
+    .breadcrumb a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.3);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--color-white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/fr/" class="logo" aria-label="ChildsFood Accueil">
+        <div class="logo-icon" aria-hidden="true">&#127860;</div>
+        <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+        <a href="../index.html#explore">Explorer</a>
+        <a href="../index.html#meal-planner">Planificateur</a>
+        <a href="../index.html#world-map">Carte du Monde</a>
+        <a href="../index.html#academy">Petit Chef</a>
+        <a href="../index.html#stories">Histoires</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" role="navigation" aria-label="S&eacute;lecteur de langue">
+          <a href="../../about/" class="lang-btn" aria-label="English">EN</a>
+          <a href="../../es/about/" class="lang-btn" aria-label="Espa&ntilde;ol">ES</a>
+          <a href="../../fr/about/" class="lang-btn active" aria-label="Fran&ccedil;ais">FR</a>
+        </div>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" role="navigation" aria-label="Navigation mobile">
+    <a href="../index.html#explore">Explorer</a>
+    <a href="../index.html#meal-planner">Planificateur de Repas</a>
+    <a href="../index.html#world-map">Carte du Monde</a>
+    <a href="../index.html#academy">Acad&eacute;mie Petit Chef</a>
+    <a href="../index.html#stories">Histoires</a>
+    <div class="lang-switcher" style="margin-top:var(--space-lg)">
+      <a href="../../about/" class="lang-btn">EN</a>
+      <a href="../../es/about/" class="lang-btn">ES</a>
+      <a href="../../fr/about/" class="lang-btn active">FR</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="about-hero" id="top">
+      <div class="about-hero-bg">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1600&h=600&fit=crop" alt="Table garnie de plats color&eacute;s et sains pour toute la famille" loading="eager" width="1600" height="600">
+      </div>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="/fr/">Accueil</a> &rsaquo; <span>&Agrave; Propos</span>
+      </nav>
+      <div class="about-hero-content">
+        <h1>Notre Mission : &Eacute;lever une G&eacute;n&eacute;ration d'Enfants Heureux et en Bonne Sant&eacute;</h1>
+        <p class="hero-subtitle">ChildsFood.com est la plateforme alimentaire pour enfants la plus culturellement diversifi&eacute;e au monde</p>
+      </div>
+    </section>
+
+    <!-- ============ VISION STATEMENT ============ -->
+    <section class="vision-section section-lg" id="vision">
+      <div class="container">
+        <div class="vision-quote reveal">
+          <blockquote>
+            Les habitudes alimentaires saines commencent par la joie, la culture et l'autonomie.
+          </blockquote>
+        </div>
+
+        <div class="vision-columns reveal">
+          <div class="vision-col is-not">
+            <h3>&#10060; Ce que ChildsFood n'est PAS</h3>
+            <ul>
+              <li>Un site de comptage de calories ou de r&eacute;gimes pour enfants</li>
+              <li>Une plateforme qui fait honte aux parents pour leurs choix alimentaires</li>
+              <li>Un site centr&eacute; uniquement sur la cuisine occidentale</li>
+              <li>Un service qui ignore les contraintes de budget</li>
+              <li>Un outil qui force les enfants &agrave; manger ce qu'ils n'aiment pas</li>
+            </ul>
+          </div>
+          <div class="vision-col is-yes">
+            <h3>&#9989; Ce que ChildsFood EST</h3>
+            <ul>
+              <li>Une biblioth&egrave;que alimentaire mondiale c&eacute;l&eacute;brant chaque culture</li>
+              <li>Un espace joyeux et bienveillant pour les familles</li>
+              <li>Un moteur de repas intelligent adapt&eacute; &agrave; chaque budget</li>
+              <li>Une acad&eacute;mie de cuisine qui donne de l'autonomie aux enfants</li>
+              <li>Un guide nutritionnel visuel sans culpabilit&eacute; ni chiffres</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ L'ECART DU MARCHE ============ -->
+    <section class="market-gap-section" id="market-gap">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="text-caption" style="color:var(--color-primary)">L'&Eacute;cart du March&eacute;</p>
+          <h2 class="text-h1">Pourquoi ChildsFood Existe</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:700px;margin:var(--space-md) auto 0">Nous avons identifi&eacute; un manque profond dans le paysage de l'alimentation pour enfants. Voici ce que nous avons trouv&eacute;.</p>
+        </div>
+
+        <div class="gap-grid">
+          <div class="gap-card exists reveal">
+            <h3><span style="font-size:1.5rem">&#128196;</span> Ce Qui Existe</h3>
+            <ul>
+              <li>Sites de recettes g&eacute;n&eacute;riques avec quelques filtres basiques</li>
+              <li>Blogs parentaux centr&eacute;s sur une seule culture alimentaire</li>
+              <li>Applications de nutrition obsess&eacute;es par les calories et les macros</li>
+              <li>Livres de cuisine pour enfants &mdash; statiques, chers, limit&eacute;s</li>
+              <li>Planificateurs de repas sans prise en compte culturelle</li>
+              <li>Contenu en anglais uniquement pour la plupart des plateformes</li>
+            </ul>
+          </div>
+          <div class="gap-card missing reveal">
+            <h3><span style="font-size:1.5rem">&#11088;</span> Ce Qui Manque (ChildsFood)</h3>
+            <ul>
+              <li>Une m&eacute;ga-plateforme unifi&eacute;e de plus de 50 pays</li>
+              <li>Un moteur de recommandation intelligent par &acirc;ge, r&eacute;gime, budget et culture</li>
+              <li>Des niveaux de complexit&eacute; (Simple &rarr; Mod&eacute;r&eacute; &rarr; Petit Chef)</li>
+              <li>Une approche centr&eacute;e sur l'enfant avec personnalisation (&laquo; &Agrave; Leur Fa&ccedil;on &raquo;)</li>
+              <li>Un syst&egrave;me d'Assiette Joyeuse &mdash; nutritionnel mais sans honte</li>
+              <li>Multilingue d&egrave;s le d&eacute;part (EN, ES, FR) et en expansion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPES FONDAMENTAUX ============ -->
+    <section class="principles-section" id="principles">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-primary)">Ce En Quoi Nous Croyons</p>
+          <h2 class="text-h1">Nos 5 Principes Fondamentaux</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:700px;margin:var(--space-md) auto 0">Ces principes guident chaque recette, chaque outil et chaque recommandation que nous cr&eacute;ons.</p>
+        </div>
+
+        <div class="grid grid-5 stagger-children">
+          <div class="principle-card">
+            <div class="principle-icon" style="background:linear-gradient(135deg,var(--color-green),var(--color-secondary))">&#128154;</div>
+            <h3>La sant&eacute; d'abord</h3>
+            <p>Chaque recette est con&ccedil;ue avec un &eacute;quilibre nutritionnel optimal. Pas de sucre cach&eacute;, pas d'ingr&eacute;dients ultra-transform&eacute;s &mdash; juste de vrais aliments pour de vrais enfants.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon" style="background:linear-gradient(135deg,var(--color-primary),var(--color-accent))">&#127758;</div>
+            <h3>La culture compte profond&eacute;ment</h3>
+            <p>L'alimentation est identit&eacute;. Nous honorons et c&eacute;l&eacute;brons les traditions culinaires de chaque pays, sans les simplifier ni les d&eacute;naturer.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon" style="background:linear-gradient(135deg,var(--color-secondary),var(--color-green))">&#128176;</div>
+            <h3>Le budget est respect&eacute;</h3>
+            <p>Des repas sains ne doivent pas co&ucirc;ter cher. Nos plans &eacute;conomiques commencent &agrave; partir de 3&euro; par repas familial, avec des ingr&eacute;dients accessibles partout.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon" style="background:linear-gradient(135deg,var(--color-accent),var(--color-pink))">&#128150;</div>
+            <h3>La joie bat la perfection</h3>
+            <p>Mieux vaut un repas joyeux et imparfait qu'un repas parfait servi sous la pression. L'assiette est un espace de bonheur, pas de stress.</p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon" style="background:linear-gradient(135deg,var(--color-purple),#6C5CE7)">&#128170;</div>
+            <h3>L'autonomie cr&eacute;e des habitudes durables</h3>
+            <p>Quand les enfants choisissent, pr&eacute;parent et dressent leurs propres assiettes, ils d&eacute;veloppent une relation saine avec la nourriture pour la vie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LES 7 PILIERS ============ -->
+    <section class="pillars-expanded-section" id="pillars">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-accent)">Notre Fondation</p>
+          <h2 class="text-h1">Les 7 Piliers de ChildsFood</h2>
+          <p class="text-body-lg" style="color:rgba(255,255,255,0.75);max-width:700px;margin:var(--space-md) auto 0">Tout ce que nous construisons repose sur ces sept principes &mdash; des recettes aux recommandations, des plans de repas aux cours de cuisine.</p>
+        </div>
+
+        <div style="max-width:900px;margin:0 auto">
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-primary),var(--color-accent))">&#127758;</div>
+            <div class="pillar-expanded-content">
+              <h3>1. Biblioth&egrave;que Alimentaire Mondiale</h3>
+              <p>La biblioth&egrave;que alimentaire pour enfants la plus diversifi&eacute;e culturellement en ligne. Plus de 200 recettes de plus de 50 pays, organis&eacute;es par r&eacute;gion, culture, saison et &acirc;ge. Chaque recette inclut des notes culturelles, des alternatives pour les allerg&egrave;nes et des adaptations budg&eacute;taires.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-secondary),var(--color-green))">&#127848;</div>
+            <div class="pillar-expanded-content">
+              <h3>2. Moteur de Repas Intelligent</h3>
+              <p>Indiquez l'&acirc;ge de votre enfant, son r&eacute;gime alimentaire, ses allergies et votre budget. Obtenez instantan&eacute;ment des plans de repas personnalis&eacute;s avec listes de courses, scores nutritionnels et suggestions culturellement adapt&eacute;es.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-purple),var(--color-pink))">&#128200;</div>
+            <div class="pillar-expanded-content">
+              <h3>3. Du Simple au Complexe</h3>
+              <p>Chaque repas propose 3 niveaux : Simple (5 ingr&eacute;dients, 15 min), Mod&eacute;r&eacute; (7-10 ingr&eacute;dients) et Mode Petit Chef (recette compl&egrave;te avec dressage cr&eacute;atif). Les familles progressent &agrave; leur rythme, sans pression.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-accent),var(--color-primary))">&#127912;</div>
+            <div class="pillar-expanded-content">
+              <h3>4. &Agrave; Leur Fa&ccedil;on</h3>
+              <p>Personnalisation des couleurs, barres de garnitures, cr&eacute;ativit&eacute; de dressage et &eacute;changes de saveurs. Les enfants composent leurs propres assiettes et d&eacute;veloppent leur autonomie alimentaire. Chaque assiette est unique, chaque enfant est fier.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-green),var(--color-secondary))">&#127813;</div>
+            <div class="pillar-expanded-content">
+              <h3>5. Assiette Joyeuse</h3>
+              <p>&Eacute;quilibre visuel au lieu du comptage de calories. Zone prot&eacute;ines, zone fibres, diversit&eacute; des couleurs, hydratation et graisses saines. Aucune honte, aucun chiffre &mdash; juste de la joie et de la science nutritionnelle pr&eacute;sent&eacute;e de mani&egrave;re ludique.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,var(--color-red),var(--color-pink))">&#128156;</div>
+            <div class="pillar-expanded-content">
+              <h3>6. Repenser les Mangeurs Difficiles</h3>
+              <p>&Eacute;chelles d'exposition alimentaire progressive, progression des textures, ponts de saveurs et langage neutre. Nous aidons les familles &agrave; r&eacute;duire le stress autour des repas et &agrave; augmenter la curiosit&eacute; naturellement, sans pression ni conflit.</p>
+            </div>
+          </div>
+
+          <div class="pillar-expanded reveal">
+            <div class="pillar-expanded-icon" style="background:linear-gradient(135deg,#7B68EE,#6C5CE7)">&#128104;&#8205;&#127859;</div>
+            <div class="pillar-expanded-content">
+              <h3>7. Acad&eacute;mie de Cuisine pour Enfants</h3>
+              <p>Progression structur&eacute;e des comp&eacute;tences culinaires de 3 ans &agrave; l'adolescence. Lavage, m&eacute;lange, couteau s&eacute;curis&eacute;, plaques de cuisson, planification des repas et ma&icirc;trise compl&egrave;te. Chaque &eacute;tape construit la confiance et l'ind&eacute;pendance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN CHIFFRES ============ -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="reveal">
+          <p class="text-caption" style="color:rgba(255,255,255,0.8)">En Chiffres</p>
+          <h2 class="text-h1">ChildsFood en Quelques Chiffres</h2>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="200" data-suffix="+">0</span>
+            <span class="stat-label">Recettes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="50" data-suffix="+">0</span>
+            <span class="stat-label">Pays</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="9" data-suffix="">0</span>
+            <span class="stat-label">R&eacute;gions</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="3" data-suffix="">0</span>
+            <span class="stat-label">Langues</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="4" data-suffix="">0</span>
+            <span class="stat-label">Groupes d'&acirc;ge</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-count="6" data-suffix="">0</span>
+            <span class="stat-label">Options alimentaires</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACCESSIBILITE & INCLUSION ============ -->
+    <section class="accessibility-section" id="accessibility">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="text-caption" style="color:var(--color-secondary)">Pour Chaque Famille</p>
+          <h2 class="text-h1">Engagements d'Accessibilit&eacute; et d'Inclusion</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:700px;margin:var(--space-md) auto 0">ChildsFood est con&ccedil;u pour que chaque famille, partout dans le monde, puisse y trouver sa place.</p>
+        </div>
+
+        <div class="accessibility-grid stagger-children">
+          <div class="access-card">
+            <div class="access-card-icon">&#127760;</div>
+            <h3>Multilingue</h3>
+            <p>Disponible en anglais, espagnol et fran&ccedil;ais avec d'autres langues en pr&eacute;paration. Chaque recette est traduite et culturellement adapt&eacute;e, pas simplement traduite mot &agrave; mot.</p>
+          </div>
+          <div class="access-card">
+            <div class="access-card-icon">&#128176;</div>
+            <h3>Gratuit et Accessible</h3>
+            <p>Toutes les recettes, plans de repas et outils de l'Acad&eacute;mie Petit Chef sont gratuits. Les repas sains ne devraient pas &ecirc;tre un privil&egrave;ge.</p>
+          </div>
+          <div class="access-card">
+            <div class="access-card-icon">&#9855;</div>
+            <h3>Accessible &agrave; Tous</h3>
+            <p>Site conforme aux normes WCAG 2.1. Navigation au clavier, support lecteur d'&eacute;cran, contrastes &eacute;lev&eacute;s et mode mouvement r&eacute;duit.</p>
+          </div>
+          <div class="access-card">
+            <div class="access-card-icon">&#127807;</div>
+            <h3>Tous les R&eacute;gimes</h3>
+            <p>V&eacute;g&eacute;tarien, v&eacute;gan, halal, casher, sans gluten &mdash; chaque r&eacute;gime est respect&eacute; et chaque recette inclut des alternatives claires.</p>
+          </div>
+          <div class="access-card">
+            <div class="access-card-icon">&#128107;</div>
+            <h3>Toutes les Familles</h3>
+            <p>Familles monoparentales, familles nombreuses, grands-parents, tuteurs &mdash; ChildsFood est con&ccedil;u pour toutes les structures familiales, sans jugement.</p>
+          </div>
+          <div class="access-card">
+            <div class="access-card-icon">&#9888;&#65039;</div>
+            <h3>Allergies et S&eacute;curit&eacute;</h3>
+            <p>Chaque recette inclut des avertissements clairs pour les 14 allerg&egrave;nes majeurs. Filtres int&eacute;gr&eacute;s pour exclure automatiquement les allergies de votre enfant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER CTA ============ -->
+    <section class="about-newsletter" id="newsletter">
+      <div class="container reveal">
+        <h2 class="text-h1">Rejoignez Notre Communaut&eacute; Mondiale</h2>
+        <p class="text-body-lg">Recevez des plans de repas hebdomadaires, de nouvelles recettes du monde entier et des conseils de l'Acad&eacute;mie Petit Chef directement dans votre bo&icirc;te mail. Gratuit pour toujours.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='&#10004; Vous &ecirc;tes Inscrit !'; this.querySelector('button').style.background='var(--color-charcoal)'; this.querySelector('button').style.color='var(--color-white)';">
+          <input type="email" class="newsletter-input" placeholder="Entrez votre adresse e-mail" aria-label="Adresse e-mail" required>
+          <button type="submit" class="btn btn-white btn-lg">S'abonner Gratuitement</button>
+        </form>
+        <p class="text-small" style="margin-top:var(--space-md);opacity:0.7">Pas de spam. D&eacute;sabonnement &agrave; tout moment. Nous respectons votre bo&icirc;te mail autant que nous respectons votre famille.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/fr/" class="logo">
+            <div class="logo-icon">&#127860;</div>
+            <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+          </a>
+          <p>La plateforme alimentaire pour enfants la plus diversifi&eacute;e culturellement au monde. Des repas sains, joyeux et mondiaux pour chaque famille et chaque budget.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <a href="../index.html#explore">7 Piliers</a>
+          <a href="../index.html#world-map">Carte Alimentaire Mondiale</a>
+          <a href="../index.html#cuisines">Cuisines</a>
+          <a href="../index.html#meal-planner">Planificateur de Repas</a>
+          <a href="../index.html#budget">Plans &Eacute;conomiques</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Apprendre</h4>
+          <a href="../index.html#academy">Acad&eacute;mie Petit Chef</a>
+          <a href="../index.html#happy-plate">Assiette Joyeuse</a>
+          <a href="../index.html#stories">Histoires &amp; Recherches</a>
+          <a href="#">Guides Nutritionnels</a>
+          <a href="#">Aide pour Mangeurs Difficiles</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Langues</h4>
+          <a href="../../">&#127468;&#127463; English</a>
+          <a href="../../es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="../">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChildsFood.com &mdash; Sain. Joyeux. Mondial. Inspirant.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">&#128247;</a>
+          <a href="#" aria-label="YouTube">&#9654;</a>
+          <a href="#" aria-label="Pinterest">&#128204;</a>
+          <a href="#" aria-label="Facebook">&#102;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
