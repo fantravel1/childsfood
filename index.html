@@ -112,11 +112,12 @@
       </a>
 
       <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+        <a href="explore/index.html">Recipes</a>
         <a href="#explore" class="active">Explore</a>
-        <a href="#meal-planner">Meal Planner</a>
-        <a href="#world-map">World Map</a>
+        <a href="#culture-spotlights">Cultures</a>
+        <a href="#parent-guides">Guides</a>
         <a href="#academy">Kid Chef</a>
-        <a href="#stories">Stories</a>
+        <a href="about/index.html">About</a>
       </nav>
 
       <div class="nav-actions">
@@ -134,10 +135,12 @@
 
   <!-- Mobile Navigation -->
   <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="explore/index.html">All Recipes</a>
     <a href="#explore">Explore</a>
-    <a href="#meal-planner">Meal Planner</a>
-    <a href="#world-map">World Map</a>
+    <a href="#culture-spotlights">Culture Spotlights</a>
+    <a href="#parent-guides">Guides</a>
     <a href="#academy">Kid Chef Academy</a>
+    <a href="#world-map">World Map</a>
     <a href="#stories">Stories</a>
     <a href="#budget">Budget Plans</a>
     <div class="lang-switcher" style="margin-top:var(--space-lg)">
@@ -646,6 +649,597 @@
       </div>
     </section>
 
+    <!-- ============ FEATURED RECIPES COLLECTION ============ -->
+    <section class="featured-recipes section-lg" id="featured-recipes">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-secondary)">Global Recipe Expansion</p>
+          <h2 class="text-h1">New Recipes from Around the World</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Discover kid-friendly recipes from diverse cuisines. Each recipe is tested, budget-friendly, and built for young chefs to enjoy making.</p>
+        </div>
+
+        <div id="recipe-filters">
+          <button class="filter-btn active" data-filter="cuisine" data-value="all">All Cuisines</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Asian">Asian</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Mexican">Mexican</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Mediterranean">Mediterranean</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="African">African</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Middle Eastern">Middle Eastern</button>
+          <button class="filter-btn" data-filter="diet" data-value="vegan">Vegan</button>
+          <button class="filter-btn" data-filter="diet" data-value="vegetarian">Vegetarian</button>
+        </div>
+
+        <div class="grid grid-3 stagger-children" style="margin-bottom:var(--space-2xl)">
+          <div class="recipe-card" data-cuisine="Middle Eastern" data-diet="vegetarian,vegan">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #27AE60, #1ABC9C);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Middle Eastern</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Creamy Hummus Bowl</h3>
+              <p class="recipe-desc">Protein-packed dip with roasted chickpeas and veggie dippers. Perfect for picky eaters!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 Under $4</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/creamy-hummus-bowl.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E67E22, #D35400);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">West African</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Jollof Rice Party</h3>
+              <p class="recipe-desc">Golden, aromatic West African staple. A one-pot celebration of flavor and culture.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 50 min</span>
+                <span>💰 Under $5</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/jollof-rice-party.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #27AE60, #229954);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Mexican</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Black Bean Quesadilla</h3>
+              <p class="recipe-desc">Cheesy, crispy quesadillas kids love to customize. Quick and budget-friendly.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 Under $3</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/mexican-black-bean-quesadilla.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Thai</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Thai Coconut Noodle Soup</h3>
+              <p class="recipe-desc">Creamy, aromatic, and surprisingly mild. Perfect for introducing Asian flavors.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 Under $6</span>
+                <span>🌊 Dairy-Free</span>
+              </div>
+              <a href="recipes/thai-coconut-noodle-soup.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #F39C12, #D68910);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Indian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Mild Masala Dal</h3>
+              <p class="recipe-desc">Golden, creamy lentil soup with warm spices. A global comfort food.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 30 min</span>
+                <span>💰 Under $2</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/indian-mild-dal.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #3498DB, #2980B9);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Mediterranean</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Mediterranean Pita Pockets</h3>
+              <p class="recipe-desc">Fresh, customizable pita pockets. Kids build exactly what they want.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 15 min</span>
+                <span>💰 Under $4</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/mediterranean-pita-pockets.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E84393, #B8227E);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Korean</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Korean Bibimbap Bowl</h3>
+              <p class="recipe-desc">Rainbow of vegetables kids mix together. The ultimate interactive meal!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 Under $6</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/korean-bibimbap-bowl.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #27AE60, #1ABC9C);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Brazilian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Brazilian Rice & Beans</h3>
+              <p class="recipe-desc">National staple of Brazil. Fluffy rice and creamy beans.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 30 min</span>
+                <span>💰 Under $2</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/brazilian-rice-beans-plate.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #D4A5A5, #A65D6E);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Moroccan</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Moroccan Sweet Potato Tagine</h3>
+              <p class="recipe-desc">Warming stew with chickpeas and warm spices. A culinary adventure!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 40 min</span>
+                <span>💰 Budget</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/moroccan-sweet-potato-tagine.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+              <div class="recipe-flag">🌍</div>
+              <div class="recipe-cuisine">Italian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Italian Pasta al Pomodoro</h3>
+              <p class="recipe-desc">Classic Italian pasta with simple, fresh tomato sauce. A timeless favorite.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 Under $3</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/italian-pasta-pomodoro.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row of Recipe Cards -->
+        <div class="grid grid-3 stagger-children" style="margin-bottom:var(--space-2xl)">
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #FF6B9D, #C44569);">
+              <div class="recipe-flag">🇯🇵</div>
+              <div class="recipe-cuisine">Japanese</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Japanese Okonomiyaki</h3>
+              <p class="recipe-desc">Savory pancakes with cabbage. Fun, interactive cooking experience.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 Under $6</span>
+                <span>Ages 5+</span>
+              </div>
+              <a href="recipes/japanese-okonomiyaki.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #0099FF, #0077CC);">
+              <div class="recipe-flag">🇬🇷</div>
+              <div class="recipe-cuisine">Greek</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Greek Spanakopita</h3>
+              <p class="recipe-desc">Flaky spinach pie. Crispy, cheesy, and kid-approved.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 30 min</span>
+                <span>💰 Under $5</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/greek-spanakopita.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #FF6B35, #F7931E);">
+              <div class="recipe-flag">🇻🇳</div>
+              <div class="recipe-cuisine">Vietnamese</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Vietnamese Summer Rolls</h3>
+              <p class="recipe-desc">Fresh rice paper rolls with peanut sauce. DIY fun!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 Under $5</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/vietnamese-summer-rolls.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #FFC837, #FF9500);">
+              <div class="recipe-flag">🇪🇸</div>
+              <div class="recipe-cuisine">Spanish</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Spanish Tortilla</h3>
+              <p class="recipe-desc">Potato & egg comfort food. Perfect for any meal.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 $4</span>
+                <span>🌱 Vegetarian</span>
+              </div>
+              <a href="recipes/spanish-tortilla-espanola.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+              <div class="recipe-flag">🇲🇽</div>
+              <div class="recipe-cuisine">Mexican</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Chilaquiles</h3>
+              <p class="recipe-desc">Crispy tortilla chips in red sauce. Breakfast champion!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 $5</span>
+                <span>Ages 4+</span>
+              </div>
+              <a href="recipes/mexican-chilaquiles.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E67E22, #D35400);">
+              <div class="recipe-flag">🇹🇷</div>
+              <div class="recipe-cuisine">Turkish</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Turkish Kofta</h3>
+              <p class="recipe-desc">Spiced meatballs with yogurt sauce. Aromatic and delicious.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 $5</span>
+                <span>Ages 6+</span>
+              </div>
+              <a href="recipes/turkish-kofta.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #27AE60, #1ABC9C);">
+              <div class="recipe-flag">🇱🇧</div>
+              <div class="recipe-cuisine">Lebanese</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Fattoush Salad</h3>
+              <p class="recipe-desc">Fresh salad with crispy pita croutons. Light & crunchy.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 15 min</span>
+                <span>💰 Under $4</span>
+                <span>Ages 4+</span>
+              </div>
+              <a href="recipes/lebanese-fattoush.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #F39C12, #D68910);">
+              <div class="recipe-flag">🇪🇬</div>
+              <div class="recipe-cuisine">Egyptian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Koshari</h3>
+              <p class="recipe-desc">Fusion comfort bowl with pasta, rice, lentils. A complete meal!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 30 min</span>
+                <span>💰 $4</span>
+                <span>Ages 5+</span>
+              </div>
+              <a href="recipes/egyptian-koshari.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E74C3C, #C0392B);">
+              <div class="recipe-flag">🇵🇪</div>
+              <div class="recipe-cuisine">Peruvian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Sweet Potato Bowl</h3>
+              <p class="recipe-desc">Roasted potatoes with beans & lime dressing. Colorful & nutritious.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 30 min</span>
+                <span>💰 $4</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/peruvian-sweet-potato-bowl.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #E67E22, #D35400);">
+              <div class="recipe-flag">🇵🇹</div>
+              <div class="recipe-cuisine">Portuguese</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Sardine Pasta</h3>
+              <p class="recipe-desc">Simple pasta with omega-3s. Quick & healthy.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 15 min</span>
+                <span>💰 Under $5</span>
+                <span>Ages 7+</span>
+              </div>
+              <a href="recipes/portuguese-sardine-pasta.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #9B59B6, #8E44AD);">
+              <div class="recipe-flag">🇹🇷</div>
+              <div class="recipe-cuisine">Turkish</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Chickpea Flatbread</h3>
+              <p class="recipe-desc">Protein-rich crispy flatbread. Vegan & delicious.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 20 min</span>
+                <span>💰 Under $3</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/turkish-chickpea-flatbread.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #F39C12, #D68910);">
+              <div class="recipe-flag">🇮🇩</div>
+              <div class="recipe-cuisine">Indonesian</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Nasi Kuning</h3>
+              <p class="recipe-desc">Golden turmeric rice. Aromatic & beautiful.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 25 min</span>
+                <span>💰 Under $5</span>
+                <span>🌱 Vegan</span>
+              </div>
+              <a href="recipes/indonesian-nasi-kuning.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #C0392B, #A93226);">
+              <div class="recipe-flag">🇵🇭</div>
+              <div class="recipe-cuisine">Filipino</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Filipino Adobo</h3>
+              <p class="recipe-desc">Tender braised chicken in savory-sour sauce. Comfort food!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 40 min</span>
+                <span>💰 Under $6</span>
+                <span>Ages 6+</span>
+              </div>
+              <a href="recipes/filipino-adobo.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #FF6B35, #F7931E);">
+              <div class="recipe-flag">🇻🇳</div>
+              <div class="recipe-cuisine">Vietnamese</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Banh Mi Sandwich</h3>
+              <p class="recipe-desc">Vietnamese sandwich with pickled veggies. Tangy & delicious.</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 15 min</span>
+                <span>💰 $4</span>
+                <span>Ages 5+</span>
+              </div>
+              <a href="recipes/vietnamese-banh-mi.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #FFC837, #FF9500);">
+              <div class="recipe-flag">🇪🇸</div>
+              <div class="recipe-cuisine">Spanish</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Paella Amarilla</h3>
+              <p class="recipe-desc">Golden saffron rice celebration. Impressive & fun to make!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 35 min</span>
+                <span>💰 Under $7</span>
+                <span>Ages 6+</span>
+              </div>
+              <a href="recipes/spanish-paella.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="recipe-card-header" style="background: linear-gradient(135deg, #D4A5A5, #A65D6E);">
+              <div class="recipe-flag">🇲🇦</div>
+              <div class="recipe-cuisine">Moroccan</div>
+            </div>
+            <div class="recipe-card-body">
+              <h3>Chicken Pastilla</h3>
+              <p class="recipe-desc">Crispy phyllo with spiced chicken. Fancy & fun!</p>
+              <div class="recipe-meta-mini">
+                <span>⏱️ 35 min</span>
+                <span>💰 Under $6</span>
+                <span>Ages 7+</span>
+              </div>
+              <a href="recipes/moroccan-chicken-pastilla.html" class="recipe-btn">View Recipe →</a>
+            </div>
+          </div>
+        </div>
+          <p style="color:var(--color-dark-gray);margin-bottom:var(--space-md)">Exploring global cuisines builds cultural literacy and adventurous eaters.</p>
+          <a href="#explore" class="btn btn-secondary btn-lg">Explore All Recipes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SMART RECOMMENDATION ENGINE ============ -->
+    <section class="section-lg" id="smart-recommendations">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-primary)">Personalized Picks</p>
+          <h2 class="text-h1">Smart Recipe Finder</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Tell us your child's age, dietary needs, budget, and time constraints. We'll find the perfect recipes from our global collection.</p>
+        </div>
+
+        <form id="rec-form">
+          <div>
+            <label for="rec-age">Child's Age</label>
+            <input type="number" name="rec-age" id="rec-age" min="3" max="12" value="6" required>
+          </div>
+          <div>
+            <label for="rec-diet">Diet</label>
+            <select name="rec-diet" id="rec-diet">
+              <option value="any">Any</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+            </select>
+          </div>
+          <div>
+            <label for="rec-time">Max Cook Time (min)</label>
+            <input type="number" name="rec-time" id="rec-time" min="10" max="120" value="30">
+          </div>
+          <div>
+            <label for="rec-cost">Max Cost ($)</label>
+            <input type="number" name="rec-cost" id="rec-cost" min="1" max="20" value="7">
+          </div>
+          <div>
+            <label for="rec-cuisine">Cuisine</label>
+            <select name="rec-cuisine" id="rec-cuisine">
+              <option value="any">Any Cuisine</option>
+              <option value="Asian">Asian</option>
+              <option value="Thai">Thai</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Korean">Korean</option>
+              <option value="Vietnamese">Vietnamese</option>
+              <option value="Indian">Indian</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Brazilian">Brazilian</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="Italian">Italian</option>
+              <option value="Greek">Greek</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Turkish">Turkish</option>
+              <option value="Lebanese">Lebanese</option>
+              <option value="Moroccan">Moroccan</option>
+              <option value="West African">West African</option>
+              <option value="Egyptian">Egyptian</option>
+              <option value="Middle Eastern">Middle Eastern</option>
+            </select>
+          </div>
+          <div>
+            <label for="rec-meal">Meal Type</label>
+            <select name="rec-meal" id="rec-meal">
+              <option value="any">Any Meal</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+              <option value="snack">Snack</option>
+            </select>
+          </div>
+          <div>
+            <label>Avoid Allergens</label>
+            <div class="rec-allergens">
+              <label><input type="checkbox" name="rec-allergen" value="dairy"> Dairy</label>
+              <label><input type="checkbox" name="rec-allergen" value="gluten"> Gluten</label>
+              <label><input type="checkbox" name="rec-allergen" value="eggs"> Eggs</label>
+              <label><input type="checkbox" name="rec-allergen" value="soy"> Soy</label>
+              <label><input type="checkbox" name="rec-allergen" value="peanuts"> Peanuts</label>
+              <label><input type="checkbox" name="rec-allergen" value="fish"> Fish</label>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-end;">
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Find Recipes</button>
+          </div>
+        </form>
+
+        <div id="rec-results"></div>
+      </div>
+    </section>
+
+    <!-- ============ INTERACTIVE WEEKLY PLANNER ============ -->
+    <section class="section-lg" id="weekly-planner">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-secondary)">Plan Your Week</p>
+          <h2 class="text-h1">Interactive Weekly Meal Planner</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Click any slot to add a recipe. Your plan saves automatically and generates a grocery list.</p>
+        </div>
+
+        <div id="planner-grid"></div>
+        <div id="planner-stats" class="planner-stats-row"></div>
+
+        <div class="text-center" style="margin-top:var(--space-xl)">
+          <button id="clear-plan" class="btn btn-outline">Clear Plan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GROCERY LIST GENERATOR ============ -->
+    <section class="section-lg" id="grocery-list">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-green)">Auto-Generated</p>
+          <h2 class="text-h1">Your Grocery List</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Based on your meal plan. Check items off as you shop. Print for the store.</p>
+        </div>
+
+        <div class="grocery-actions">
+          <button id="print-grocery" class="btn btn-secondary">Print Grocery List</button>
+        </div>
+
+        <div id="grocery-items" style="max-width:700px;margin:0 auto;"></div>
+      </div>
+    </section>
+
     <!-- ============ COOKING ACADEMY TIMELINE ============ -->
     <section class="academy-section section-lg" id="academy">
       <div class="container">
@@ -766,6 +1360,35 @@
             <h4 style="color:var(--color-white);margin-bottom:var(--space-sm)">&#128155; Zero Shame</h4>
             <p style="opacity:0.85;font-size:0.95rem">No guilt, no calorie obsession, no "good" or "bad" foods. Just balance, joy, and curiosity about real food.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOD EXPOSURE TRACKER ============ -->
+    <section class="section-lg" id="exposure-tracker">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-purple)">Track Food Adventures</p>
+          <h2 class="text-h1">Food Exposure Tracker</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Track your child's journey with new foods using the 6-step exposure ladder. Every step counts!</p>
+        </div>
+
+        <div style="max-width:700px;margin:0 auto;">
+          <form id="exposure-add-form">
+            <input type="text" id="exposure-food-input" placeholder="Food name (e.g., Broccoli)" required>
+            <select id="exposure-level">
+              <option value="0">1 - Saw It</option>
+              <option value="1">2 - Smelled It</option>
+              <option value="2">3 - Touched It</option>
+              <option value="3">4 - Tasted It</option>
+              <option value="4">5 - Ate Some</option>
+              <option value="5">6 - Enjoyed It!</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Add Food</button>
+          </form>
+
+          <div id="exposure-list"></div>
+          <div id="exposure-stats" class="exposure-stats-row"></div>
         </div>
       </div>
     </section>
@@ -910,6 +1533,45 @@
       </div>
     </section>
 
+    <!-- ============ CULTURE SPOTLIGHTS ============ -->
+    <section class="section-lg" id="culture-spotlights" style="background: var(--color-off-white);">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-secondary)">Culture Spotlights</p>
+          <h2 class="text-h1">Explore Food Cultures</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Dive deep into the food traditions, ingredients, and stories behind cuisines from around the world.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" class="reveal stagger-children">
+          <a href="culture/african-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#F39C12,#D68910);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127757; African Cuisines<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">54 countries, diverse traditions &amp; flavors</span></a>
+          <a href="culture/asian-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#E74C3C,#C0392B);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127983; Asian Cuisines<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Balance, harmony, and umami</span></a>
+          <a href="culture/indian-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#F39C12,#D68910);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127470;&#127475; Indian Cuisine<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Spices, warmth, regional diversity</span></a>
+          <a href="culture/latin-american-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#27AE60,#1ABC9C);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127758; Latin American<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Bold, vibrant, family-centered</span></a>
+          <a href="culture/mediterranean-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#3498DB,#2980B9);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127754; Mediterranean<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Fresh, simple, the world's healthiest diet</span></a>
+          <a href="culture/middle-eastern-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#E67E22,#D35400);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127964;&#65039; Middle Eastern<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Ancient wisdom, hospitality, shared platters</span></a>
+          <a href="culture/west-african-cuisine.html" style="display:block;padding:2rem;background:linear-gradient(135deg,#E67E22,#D35400);border-radius:16px;text-decoration:none;color:white;font-weight:700;font-size:1.1rem;transition:transform 0.2s, box-shadow 0.2s;">&#127757; West African<br><span style="font-weight:400;font-size:0.9rem;opacity:0.9">Bold flavors, community, heritage</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARENT GUIDES ============ -->
+    <section class="section-lg" id="parent-guides">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-primary)">Parent &amp; Family Guides</p>
+          <h2 class="text-h1">Resources That Help</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Expert-backed guides on picky eating, allergens, budgets, and more.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" class="reveal stagger-children">
+          <a href="guides/picky-eating-solutions.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid #9B59B6;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:#8E44AD;">Picky Eating Reframed</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Build curiosity, reduce stress</span></a>
+          <a href="guides/cooking-ages-3-5.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid #FF6B9D;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:#C44569;">Kitchen Helpers (Ages 3-5)</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Safe, fun activities for little chefs</span></a>
+          <a href="guides/budget-friendly-cooking.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid #27AE60;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:#1ABC9C;">Budget-Friendly Cooking</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Healthy meals under $2/serving</span></a>
+          <a href="guides/meal-planning-guide.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid #9B59B6;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:#8E44AD;">Meal Planning</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Save time, money, and reduce waste</span></a>
+          <a href="guides/happy-plate-framework.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid var(--color-primary);box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:var(--color-primary);">Happy Plate Framework</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Visual nutrition, no counting</span></a>
+          <a href="guides/allergen-guide-overview.html" style="display:block;padding:1.5rem;background:white;border-radius:12px;text-decoration:none;color:var(--color-dark);border-left:4px solid #E74C3C;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.2s;"><strong style="color:#C0392B;">Allergen Safety Guide</strong><br><span style="font-size:0.9rem;color:var(--color-dark-gray);">Managing food allergies safely</span></a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ NEWSLETTER CTA ============ -->
     <section class="newsletter-section section-lg" id="newsletter">
       <div class="container reveal">
@@ -938,20 +1600,22 @@
 
         <div class="footer-col">
           <h4>Explore</h4>
+          <a href="explore/index.html">All Recipes</a>
           <a href="#explore">7 Pillars</a>
           <a href="#world-map">World Food Map</a>
+          <a href="#culture-spotlights">Culture Spotlights</a>
           <a href="#cuisines">Cuisines</a>
-          <a href="#meal-planner">Meal Planner</a>
-          <a href="#budget">Budget Plans</a>
         </div>
 
         <div class="footer-col">
           <h4>Learn</h4>
           <a href="#academy">Kid Chef Academy</a>
           <a href="#happy-plate">Happy Plate</a>
+          <a href="#exposure-tracker">Food Tracker</a>
           <a href="#stories">Stories & Research</a>
-          <a href="#">Nutrition Guides</a>
-          <a href="#">Picky Eating Help</a>
+          <a href="guides/allergen-guide-overview.html">Allergen Guides</a>
+          <a href="guides/picky-eating-solutions.html">Picky Eating Help</a>
+          <a href="guides/meal-planning-guide.html">Meal Planning</a>
         </div>
 
         <div class="footer-col">
@@ -975,5 +1639,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/features.js"></script>
 </body>
 </html>
