@@ -4,52 +4,199 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Mediterranean Cuisine — Culture Spotlight | ChildsFood</title>
-  <meta name="description" content="Explore Mediterranean food culture. Learn about fresh vegetables, olive oil, and healthy eating traditions.">
+  <meta name="description" content="Explore Mediterranean food culture. Learn about fresh vegetables, olive oil, and healthy eating traditions from Greece, Italy, Spain and beyond.">
   <meta name="author" content="ChildsFood.com">
+  <link rel="canonical" href="https://childsfood.com/culture/mediterranean-cuisine">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstxa.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .culture-hero { background: linear-gradient(135deg, #3498DB, #2980B9); color: white; padding: 4rem 2rem; margin-top: var(--header-height); }
+    .culture-hero h1 { font-size: 2.8rem; font-family: 'Fredoka One'; margin: 0; }
+    .culture-section { margin: 3rem 0; }
+    .culture-section h2 { color: #2980B9; font-size: 1.8rem; margin-bottom: 1rem; }
+    .culture-highlight { background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0; border-left: 4px solid #3498DB; }
+    .recipe-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .recipe-link-card { background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #3498DB; transition: transform 0.2s, box-shadow 0.2s; }
+    .recipe-link-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .recipe-link-card h3 { margin: 0 0 0.5rem 0; color: var(--color-dark); }
+    .recipe-link-card a { color: #2980B9; text-decoration: none; font-weight: 700; }
+    .recipe-link-card a:hover { text-decoration: underline; }
+    .culture-nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    .culture-nav a { display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600; font-size: 0.95rem; transition: background 0.2s, color 0.2s; }
+    .culture-nav a:hover { background: #3498DB; color: white; }
+    .breadcrumb { padding: 1rem 0; font-size: 0.85rem; color: var(--color-mid-gray); margin-top: var(--header-height); }
+    .breadcrumb a { color: var(--color-dark-gray); font-weight: 600; text-decoration: none; }
+    .breadcrumb a:hover { color: #2980B9; }
+  </style>
 </head>
 <body>
-  <header class="header"><div class="header-inner"><a href="/" class="logo"><span>Childs<span style="color:var(--color-secondary)">Food</span></span></a></div></header>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="ChildsFood Home">
+        <div class="logo-icon" aria-hidden="true">&#127860;</div>
+        <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+        <a href="../explore/index.html">Recipes</a>
+        <a href="../index.html#explore">Explore</a>
+        <a href="../index.html#academy">Kid Chef</a>
+        <a href="../about/index.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="../explore/index.html">Recipes</a>
+    <a href="../index.html#explore">Explore</a>
+    <a href="../index.html#academy">Kid Chef Academy</a>
+    <a href="../about/index.html">About</a>
+  </nav>
+
   <main>
     <div class="container">
-      <section style="background: linear-gradient(135deg, #3498DB, #2980B9); color: white; padding: 4rem 0;">
-        <h1 style="font-size: 2.8rem; font-family: 'Fredoka One'; margin: 0;">🌊 Mediterranean Cuisine</h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem;">Fresh, bright, simple. The foods of Greece, Italy, Spain, and beyond celebrate sunshine, olive oil, and fresh ingredients.</p>
-      </section>
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &rsaquo; <a href="../index.html#cuisines">Culture</a> &rsaquo; <strong>Mediterranean Cuisine</strong>
+      </div>
+    </div>
 
-      <div style="margin: 3rem 0;">
-        <h2 style="color: #2980B9; font-size: 1.8rem;">The Mediterranean Way</h2>
-        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; border-left: 4px solid #3498DB; margin: 1.5rem 0;">
-          <p><strong>Simplicity:</strong> Let quality ingredients shine. A ripe tomato, fresh basil, good olive oil—that's a meal.</p>
+    <section class="culture-hero" style="margin-top: 0;">
+      <div class="container">
+        <h1>&#127754; Mediterranean Cuisine</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Fresh, bright, simple. The foods of Greece, Italy, Spain, and beyond celebrate sunshine, olive oil, and fresh ingredients.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="culture-section">
+        <h2>The Mediterranean Way</h2>
+        <div class="culture-highlight">
+          <p><strong>Simplicity:</strong> Let quality ingredients shine. A ripe tomato, fresh basil, good olive oil&mdash;that's a meal.</p>
         </div>
-        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; border-left: 4px solid #3498DB; margin: 1.5rem 0;">
+        <div class="culture-highlight">
           <p><strong>Seasonality:</strong> Food changes with the seasons. Spring vegetables, summer tomatoes, autumn figs, winter greens.</p>
         </div>
-        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; border-left: 4px solid #3498DB; margin: 1.5rem 0;">
+        <div class="culture-highlight">
           <p><strong>Healthfulness:</strong> The Mediterranean diet is one of the world's healthiest. Vegetables, whole grains, olive oil, fish.</p>
         </div>
       </div>
 
-      <div style="margin: 3rem 0;">
-        <h2 style="color: #2980B9;">Key Ingredients</h2>
+      <div class="culture-section">
+        <h2>Key Ingredients</h2>
         <ul style="font-size: 1.05rem; line-height: 1.8;">
-          <li>🫒 Olive oil (the liquid gold)</li>
-          <li>🍅 Tomatoes (fresh and in sauces)</li>
-          <li>🧄 Garlic & onions</li>
-          <li>🌿 Fresh herbs (basil, oregano, thyme)</li>
-          <li>🐟 Fresh fish & seafood</li>
-          <li>🥒 Olives & capers</li>
-          <li>🧀 Feta, mozzarella, hard cheeses</li>
-          <li>🥗 Leafy greens & vegetables</li>
+          <li>&#129747; Olive oil (the liquid gold)</li>
+          <li>&#127813; Tomatoes (fresh and in sauces)</li>
+          <li>&#129476; Garlic &amp; onions</li>
+          <li>&#127807; Fresh herbs (basil, oregano, thyme)</li>
+          <li>&#128031; Fresh fish &amp; seafood</li>
+          <li>&#129361; Olives &amp; capers</li>
+          <li>&#129472; Feta, mozzarella, hard cheeses</li>
+          <li>&#129367; Leafy greens &amp; vegetables</li>
         </ul>
+      </div>
+
+      <div class="culture-section">
+        <h2>&#127860; Try These Mediterranean Recipes</h2>
+        <div class="recipe-links">
+          <div class="recipe-link-card">
+            <h3>Mediterranean Pita Pockets</h3>
+            <p>Warm pita stuffed with fresh veggies and hummus.</p>
+            <a href="../recipes/mediterranean-pita-pockets.html">View Recipe &rarr;</a>
+          </div>
+          <div class="recipe-link-card">
+            <h3>Greek Spanakopita</h3>
+            <p>Flaky phyllo pastry with spinach and feta filling.</p>
+            <a href="../recipes/greek-spanakopita.html">View Recipe &rarr;</a>
+          </div>
+          <div class="recipe-link-card">
+            <h3>Italian Pasta Pomodoro</h3>
+            <p>Simple, classic tomato sauce over fresh pasta.</p>
+            <a href="../recipes/italian-pasta-pomodoro.html">View Recipe &rarr;</a>
+          </div>
+          <div class="recipe-link-card">
+            <h3>Spanish Paella</h3>
+            <p>Saffron-infused rice with vegetables and protein.</p>
+            <a href="../recipes/spanish-paella.html">View Recipe &rarr;</a>
+          </div>
+          <div class="recipe-link-card">
+            <h3>Spanish Tortilla Espa&ntilde;ola</h3>
+            <p>Classic potato and egg omelette from Spain.</p>
+            <a href="../recipes/spanish-tortilla-espanola.html">View Recipe &rarr;</a>
+          </div>
+          <div class="recipe-link-card">
+            <h3>Portuguese Sardine Pasta</h3>
+            <p>Heart-healthy pasta with Portuguese sardines.</p>
+            <a href="../recipes/portuguese-sardine-pasta.html">View Recipe &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="culture-section">
+        <h2>&#127758; Explore More Cultures</h2>
+        <div class="culture-nav">
+          <a href="african-cuisine.html">&#127757; African</a>
+          <a href="west-african-cuisine.html">&#127757; West African</a>
+          <a href="asian-cuisine.html">&#127983; Asian</a>
+          <a href="indian-cuisine.html">&#127470;&#127475; Indian</a>
+          <a href="latin-american-cuisine.html">&#127758; Latin American</a>
+          <a href="middle-eastern-cuisine.html">&#127964;&#65039; Middle Eastern</a>
+        </div>
+      </div>
+
+      <div class="culture-section">
+        <h2>&#128218; Helpful Guides</h2>
+        <div class="culture-nav">
+          <a href="../guides/picky-eating-solutions.html">Picky Eating Solutions</a>
+          <a href="../guides/cooking-ages-3-5.html">Cooking with Ages 3-5</a>
+          <a href="../guides/budget-friendly-cooking.html">Budget-Friendly Cooking</a>
+          <a href="../guides/meal-planning-guide.html">Meal Planning</a>
+        </div>
       </div>
     </div>
   </main>
-  <footer style="background: var(--color-dark); color: white; padding: 2rem; text-align: center; margin-top: 4rem;">
-    <p>&copy; 2026 ChildsFood.com</p>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">&#127860;</div>
+            <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+          </a>
+          <p>The world's most culturally diverse children's food platform. Healthy, joyful, global meals for every family.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="../explore/index.html">All Recipes</a>
+          <a href="../index.html#explore">7 Pillars</a>
+          <a href="../index.html#world-map">World Food Map</a>
+          <a href="../index.html#cuisines">Cuisines</a>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <a href="../guides/allergen-guide-overview.html">Allergen Guides</a>
+          <a href="../guides/picky-eating-solutions.html">Picky Eating Help</a>
+          <a href="../guides/happy-plate-framework.html">Happy Plate</a>
+          <a href="../guides/meal-planning-guide.html">Meal Planning</a>
+        </div>
+        <div class="footer-col">
+          <h4>Languages</h4>
+          <a href="../index.html">&#127468;&#127463; English</a>
+          <a href="../es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="../fr/">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChildsFood.com &mdash; Healthy. Joyful. Global. Empowering.</p>
+      </div>
+    </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -12,9 +12,40 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header"><div class="header-inner"><a href="/" class="logo"><span>Childs<span style="color:var(--color-secondary)">Food</span></span></a></div></header>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="ChildsFood Home">
+        <div class="logo-icon" aria-hidden="true">&#127860;</div>
+        <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+        <a href="../explore/index.html">Recipes</a>
+        <a href="../index.html#explore">Explore</a>
+        <a href="../index.html#academy">Kid Chef</a>
+        <a href="../about/index.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="../explore/index.html">Recipes</a>
+    <a href="../index.html#explore">Explore</a>
+    <a href="../index.html#academy">Kid Chef Academy</a>
+    <a href="../about/index.html">About</a>
+  </nav>
+
   <main>
     <div class="container">
+      <div style="padding: 1rem 0; font-size: 0.85rem; margin-top: var(--header-height);">
+        <a href="../index.html" style="color: var(--color-dark-gray); font-weight: 600; text-decoration: none;">Home</a> &rsaquo;
+        <a href="../index.html#stories" style="color: var(--color-dark-gray); font-weight: 600; text-decoration: none;">Guides</a> &rsaquo;
+        <strong>Food Allergen Safety Guide</strong>
+      </div>
       <section style="background: linear-gradient(135deg, #E74C3C, #C0392B); color: white; padding: 4rem 0;">
         <h1 style="font-size: 2.8rem; font-family: 'Fredoka One'; margin: 0;">🛡️ Food Allergen Safety Guide</h1>
         <p style="font-size: 1.2rem; margin-top: 1rem;">Complete resource for managing food allergies and feeding kids safely.</p>
@@ -114,10 +145,83 @@
           <li><a href="allergen-eggs.html" style="color: #C0392B; text-decoration: none; font-weight: 600;">Egg Allergy Guide →</a></li>
         </ul>
       </div>
+      <div style="margin: 3rem 0;">
+        <h2 style="color: #C0392B;">&#127860; Recommended Recipes</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+          <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #C0392B;">
+            <h3 style="margin: 0 0 0.5rem 0;">Dairy Allergy Guide</h3>
+            <p>Complete guide to avoiding dairy, safe substitutions, and meeting calcium needs.</p>
+            <a href="allergen-dairy.html" style="color: #C0392B; font-weight: 700; text-decoration: none;">Dairy Allergy Guide &rarr;</a>
+          </div>
+          <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #C0392B;">
+            <h3 style="margin: 0 0 0.5rem 0;">Gluten &amp; Celiac Guide</h3>
+            <p>Safe grains, hidden gluten sources, cross-contamination prevention, and GF recipes.</p>
+            <a href="allergen-gluten.html" style="color: #C0392B; font-weight: 700; text-decoration: none;">Gluten &amp; Celiac Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 3rem 0;">
+        <h2 style="color: #C0392B;">&#128218; More Guides</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+          <a href="picky-eating-solutions.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Picky Eating</a>
+          <a href="cooking-ages-3-5.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Ages 3-5</a>
+          <a href="budget-friendly-cooking.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Budget Cooking</a>
+          <a href="meal-planning-guide.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Meal Planning</a>
+          <a href="happy-plate-framework.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Happy Plate</a>
+        </div>
+      </div>
+
+      <div style="margin: 3rem 0;">
+        <h2 style="color: #C0392B;">&#127758; Explore Cultures</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+          <a href="../culture/african-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">African</a>
+          <a href="../culture/asian-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Asian</a>
+          <a href="../culture/indian-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Indian</a>
+          <a href="../culture/latin-american-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Latin American</a>
+          <a href="../culture/mediterranean-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Mediterranean</a>
+          <a href="../culture/middle-eastern-cuisine.html" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600;">Middle Eastern</a>
+        </div>
+      </div>
     </div>
   </main>
-  <footer style="background: var(--color-dark); color: white; padding: 2rem; text-align: center; margin-top: 4rem;">
-    <p>&copy; 2026 ChildsFood.com | Safe, Inclusive, Healthy Eating</p>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">&#127860;</div>
+            <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+          </a>
+          <p>The world's most culturally diverse children's food platform. Healthy, joyful, global meals for every family.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="../explore/index.html">All Recipes</a>
+          <a href="../index.html#explore">7 Pillars</a>
+          <a href="../index.html#world-map">World Food Map</a>
+          <a href="../index.html#cuisines">Cuisines</a>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <a href="../guides/allergen-guide-overview.html">Allergen Guides</a>
+          <a href="../guides/picky-eating-solutions.html">Picky Eating Help</a>
+          <a href="../guides/happy-plate-framework.html">Happy Plate</a>
+          <a href="../guides/meal-planning-guide.html">Meal Planning</a>
+        </div>
+        <div class="footer-col">
+          <h4>Languages</h4>
+          <a href="../index.html">&#127468;&#127463; English</a>
+          <a href="../es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="../fr/">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChildsFood.com &mdash; Healthy. Joyful. Global. Empowering.</p>
+      </div>
+    </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

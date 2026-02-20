@@ -8,46 +8,77 @@
   <meta name="author" content="ChildsFood.com">
   <link rel="canonical" href="https://childsfood.com/culture/west-african-cuisine">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstxa.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .culture-hero { background: linear-gradient(135deg, #E67E22, #D35400); color: white; padding: 4rem 0; }
+    .culture-hero { background: linear-gradient(135deg, #E67E22, #D35400); color: white; padding: 4rem 2rem; margin-top: var(--header-height); }
     .culture-hero h1 { font-size: 2.8rem; font-family: 'Fredoka One'; margin: 0; }
     .culture-section { margin: 3rem 0; }
     .culture-section h2 { color: var(--color-secondary); font-size: 1.8rem; margin-bottom: 1rem; }
     .culture-highlight { background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0; border-left: 4px solid #E67E22; }
     .recipe-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .recipe-link-card { background: white; padding: 1.5rem; border-radius: 8px; border: 2px solid #E67E22; }
+    .recipe-link-card { background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #E67E22; transition: transform 0.2s, box-shadow 0.2s; }
+    .recipe-link-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
     .recipe-link-card h3 { margin: 0 0 0.5rem 0; color: var(--color-dark); }
-    .recipe-link-card a { color: #E67E22; text-decoration: none; font-weight: 600; }
+    .recipe-link-card a { color: #E67E22; text-decoration: none; font-weight: 700; }
     .recipe-link-card a:hover { text-decoration: underline; }
+    .culture-nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    .culture-nav a { display: inline-block; padding: 0.6rem 1.2rem; background: var(--color-light); border-radius: 2rem; text-decoration: none; color: var(--color-dark); font-weight: 600; font-size: 0.95rem; transition: background 0.2s, color 0.2s; }
+    .culture-nav a:hover { background: #E67E22; color: white; }
+    .breadcrumb { padding: 1rem 0; font-size: 0.85rem; color: var(--color-mid-gray); margin-top: var(--header-height); }
+    .breadcrumb a { color: var(--color-dark-gray); font-weight: 600; text-decoration: none; }
+    .breadcrumb a:hover { color: #E67E22; }
   </style>
 </head>
 <body>
-  <header class="header">
+  <header class="header" role="banner">
     <div class="header-inner">
-      <a href="/" class="logo"><span>Childs<span style="color:var(--color-secondary)">Food</span></span></a>
-      <nav class="nav-desktop">
-        <a href="/#explore">Recipes</a>
-        <a href="/culture">Culture</a>
-        <a href="/#academy">Academy</a>
+      <a href="../index.html" class="logo" aria-label="ChildsFood Home">
+        <div class="logo-icon" aria-hidden="true">&#127860;</div>
+        <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+        <a href="../explore/index.html">Recipes</a>
+        <a href="../index.html#explore">Explore</a>
+        <a href="../index.html#academy">Kid Chef</a>
+        <a href="../about/index.html">About</a>
       </nav>
+      <div class="nav-actions">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
+  <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="../explore/index.html">Recipes</a>
+    <a href="../index.html#explore">Explore</a>
+    <a href="../index.html#academy">Kid Chef Academy</a>
+    <a href="../about/index.html">About</a>
+  </nav>
+
   <main>
     <div class="container">
-      <section class="culture-hero">
-        <h1>🌍 West African Cuisine</h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem;">A celebration of vibrant flavors, community, and culinary heritage across Nigeria, Ghana, Senegal, and beyond.</p>
-      </section>
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &rsaquo; <a href="../index.html#cuisines">Culture</a> &rsaquo; <strong>West African Cuisine</strong>
+      </div>
+    </div>
 
+    <section class="culture-hero" style="margin-top: 0;">
+      <div class="container">
+        <h1>&#127757; West African Cuisine</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">A celebration of vibrant flavors, community, and culinary heritage across Nigeria, Ghana, Senegal, and beyond.</p>
+      </div>
+    </section>
+
+    <div class="container">
       <div class="culture-section">
         <h2>The Heart of West African Food</h2>
         <p>West African cuisine is built on:</p>
         <div class="culture-highlight">
-          <strong>Community & Sharing:</strong> Food is meant to be enjoyed together. Large platters, communal meals, and feeding family are central values.
+          <strong>Community &amp; Sharing:</strong> Food is meant to be enjoyed together. Large platters, communal meals, and feeding family are central values.
         </div>
         <div class="culture-highlight">
           <strong>Bold Flavors:</strong> Tomatoes, peppers, onions, garlic, and spices create rich, savory foundations. Palm oil, coconut milk, and peanuts add creaminess.
@@ -61,11 +92,11 @@
       </div>
 
       <div class="culture-section">
-        <h2>Key Ingredients & Flavors</h2>
+        <h2>Key Ingredients &amp; Flavors</h2>
         <ul style="font-size: 1.05rem; line-height: 1.8;">
           <li><strong>Palm Oil:</strong> Deep orange, rich flavor. Essential to many dishes.</li>
           <li><strong>Jollof:</strong> The king of West African rice dishes. Tomato-based, aromatic, and universally loved.</li>
-          <li><strong>Peanuts & Groundnuts:</strong> Appear in stews, sauces, and as snacks. High in protein.</li>
+          <li><strong>Peanuts &amp; Groundnuts:</strong> Appear in stews, sauces, and as snacks. High in protein.</li>
           <li><strong>Leafy Greens:</strong> Spinach, okra, and bitter greens are nutritional powerhouses.</li>
           <li><strong>Spices:</strong> Scotch bonnets (hot!), ginger, garlic, and African seasonings.</li>
           <li><strong>Grains:</strong> Millet, sorghum, fufu, gari, and rice are staples.</li>
@@ -81,7 +112,7 @@
           <strong>Celebrate Color:</strong> The reds, golds, and greens of West African dishes are visually exciting. Let kids explore the colors!
         </div>
         <div class="culture-highlight">
-          <strong>Tell Stories:</strong> Share where foods come from. "This jollof rice is beloved in Nigeria, Ghana, and Senegal—three amazing countries."
+          <strong>Tell Stories:</strong> Share where foods come from. "This jollof rice is beloved in Nigeria, Ghana, and Senegal&mdash;three amazing countries."
         </div>
         <div class="culture-highlight">
           <strong>Make It Together:</strong> Stirring a pot of jollof, mixing stew, or pounding fufu builds excitement and ownership.
@@ -89,17 +120,12 @@
       </div>
 
       <div class="culture-section">
-        <h2>Featured West African Recipes</h2>
+        <h2>&#127860; Featured West African Recipes</h2>
         <div class="recipe-links">
           <div class="recipe-link-card">
             <h3>Jollof Rice Party</h3>
-            <p>Golden saffron rice—the celebration dish of West Africa.</p>
-            <a href="/recipes/jollof-rice-party.html">View Recipe →</a>
-          </div>
-          <div class="recipe-link-card">
-            <h3>Peanut Stew</h3>
-            <p>Creamy, protein-rich comfort food beloved across the region.</p>
-            <a href="#" style="opacity: 0.5; cursor: not-allowed;">Coming Soon</a>
+            <p>Golden celebration rice&mdash;the most loved dish of West Africa.</p>
+            <a href="../recipes/jollof-rice-party.html">View Recipe &rarr;</a>
           </div>
         </div>
       </div>
@@ -108,23 +134,74 @@
         <h2>Cultural Values to Share</h2>
         <p><strong>In West African food culture:</strong></p>
         <ul style="font-size: 1.05rem; line-height: 1.8;">
-          <li>🤝 Food = Family. Meals are celebrations of togetherness.</li>
-          <li>🎯 Flavor over simplicity. Bold, complex tastes are valued.</li>
-          <li>💪 Nutrition matters. Traditional food combinations are nutritionally complete.</li>
-          <li>🌍 Heritage is pride. Every dish tells a story of culture and history.</li>
-          <li>🙌 Abundance is shared. Generosity is expressed through food.</li>
+          <li>&#129309; Food = Family. Meals are celebrations of togetherness.</li>
+          <li>&#127919; Flavor over simplicity. Bold, complex tastes are valued.</li>
+          <li>&#128170; Nutrition matters. Traditional food combinations are nutritionally complete.</li>
+          <li>&#127757; Heritage is pride. Every dish tells a story of culture and history.</li>
+          <li>&#128588; Abundance is shared. Generosity is expressed through food.</li>
         </ul>
       </div>
 
-      <div class="culture-section" style="background: var(--color-light); padding: 2rem; border-radius: 12px;">
-        <h2 style="margin-top: 0;">Learn More</h2>
-        <p>Explore recipes from Nigeria, Ghana, Senegal, Cameroon, Côte d'Ivoire, and other West African countries. Each has unique flavors while sharing common culinary foundations.</p>
+      <div class="culture-section">
+        <h2>&#127758; Explore More Cultures</h2>
+        <div class="culture-nav">
+          <a href="african-cuisine.html">&#127757; African</a>
+          <a href="asian-cuisine.html">&#127983; Asian</a>
+          <a href="indian-cuisine.html">&#127470;&#127475; Indian</a>
+          <a href="latin-american-cuisine.html">&#127758; Latin American</a>
+          <a href="mediterranean-cuisine.html">&#127754; Mediterranean</a>
+          <a href="middle-eastern-cuisine.html">&#127964;&#65039; Middle Eastern</a>
+        </div>
+      </div>
+
+      <div class="culture-section">
+        <h2>&#128218; Helpful Guides</h2>
+        <div class="culture-nav">
+          <a href="../guides/picky-eating-solutions.html">Picky Eating Solutions</a>
+          <a href="../guides/cooking-ages-3-5.html">Cooking with Ages 3-5</a>
+          <a href="../guides/budget-friendly-cooking.html">Budget-Friendly Cooking</a>
+          <a href="../guides/meal-planning-guide.html">Meal Planning</a>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer style="background: var(--color-dark); color: white; padding: 2rem; text-align: center; margin-top: 4rem;">
-    <p>&copy; 2026 ChildsFood.com | Raising Happy, Healthy Eaters</p>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">&#127860;</div>
+            <span>Childs<span style="color:var(--color-secondary)">Food</span></span>
+          </a>
+          <p>The world's most culturally diverse children's food platform. Healthy, joyful, global meals for every family.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="../explore/index.html">All Recipes</a>
+          <a href="../index.html#explore">7 Pillars</a>
+          <a href="../index.html#world-map">World Food Map</a>
+          <a href="../index.html#cuisines">Cuisines</a>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <a href="../guides/allergen-guide-overview.html">Allergen Guides</a>
+          <a href="../guides/picky-eating-solutions.html">Picky Eating Help</a>
+          <a href="../guides/happy-plate-framework.html">Happy Plate</a>
+          <a href="../guides/meal-planning-guide.html">Meal Planning</a>
+        </div>
+        <div class="footer-col">
+          <h4>Languages</h4>
+          <a href="../index.html">&#127468;&#127463; English</a>
+          <a href="../es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="../fr/">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChildsFood.com &mdash; Healthy. Joyful. Global. Empowering.</p>
+      </div>
+    </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>
