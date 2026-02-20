@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Happy Plate Framework — Nutrition Without Numbers | ChildsFood</title>
+  <meta name="description" content="Learn the Happy Plate Framework. Visual balance instead of calorie counting. No shame, no numbers—just healthy, joyful eating.">
+  <meta name="author" content="ChildsFood.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstxa.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .plate-section { margin: 3rem 0; }
+    .plate-zone { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; align-items: center; }
+    .zone-card { background: var(--color-light); padding: 2rem; border-radius: 12px; }
+    .zone-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; }
+    .protein-zone { border-left: 4px solid #E74C3C; }
+    .protein-zone .zone-title { color: #E74C3C; }
+    .fiber-zone { border-left: 4px solid #27AE60; }
+    .fiber-zone .zone-title { color: #27AE60; }
+    .color-zone { border-left: 4px solid #9B59B6; }
+    .color-zone .zone-title { color: #9B59B6; }
+    .fat-zone { border-left: 4px solid #F39C12; }
+    .fat-zone .zone-title { color: #F39C12; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo"><span>Childs<span style="color:var(--color-secondary)">Food</span></span></a>
+      <nav class="nav-desktop">
+        <a href="/#explore">Recipes</a>
+        <a href="/guides">Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: white; padding: 4rem 0;">
+        <h1 style="font-size: 2.8rem; font-family: 'Fredoka One'; margin: 0;">🍽️ The Happy Plate Framework</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Visual balance instead of calorie counting. No shame. No numbers. Just healthy, joyful eating.</p>
+      </section>
+
+      <div class="plate-section">
+        <h2 style="color: var(--color-primary); font-size: 2rem;">What is the Happy Plate?</h2>
+        <p style="font-size: 1.05rem; line-height: 1.8;">
+          The Happy Plate Framework teaches children (and parents!) to build balanced meals visually. Instead of counting calories or macros, we look at the plate and ask: <strong>"Does this plate have all the colors and groups we need?"</strong>
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.8;">
+          This approach is joyful, positive, and teaches kids how to feed themselves well for life.
+        </p>
+      </div>
+
+      <div class="plate-zone">
+        <div class="zone-card protein-zone">
+          <div class="zone-title">🥚 Protein Zone</div>
+          <p><strong>What goes here:</strong> Meat, fish, eggs, beans, tofu, nuts, seeds, legumes.</p>
+          <p><strong>Why it matters:</strong> Protein builds muscles, hair, skin, and keeps kids full and energized.</p>
+          <p><strong>Visual: 1/4 of the plate</strong></p>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">🔄</div>
+      </div>
+
+      <div class="plate-zone" style="direction: rtl;">
+        <div style="text-align: center; font-size: 4rem;">🔄</div>
+        <div class="zone-card fiber-zone">
+          <div class="zone-title">🥦 Fiber Zone</div>
+          <p><strong>What goes here:</strong> Vegetables, fruits, whole grains, legumes.</p>
+          <p><strong>Why it matters:</strong> Fiber keeps digestion healthy, feeds good gut bacteria, and keeps kids satisfied longer.</p>
+          <p><strong>Visual: Fill at least 1/2 the plate</strong></p>
+        </div>
+      </div>
+
+      <div class="plate-zone">
+        <div class="zone-card color-zone">
+          <div class="zone-title">🌈 Color Diversity</div>
+          <p><strong>The Rainbow Rule:</strong> Aim for at least 3 different colors on the plate.</p>
+          <p>Red tomatoes + green broccoli + orange carrots = nutritional diversity. Different colors = different nutrients.</p>
+          <p><strong>Why it matters:</strong> Colors indicate different vitamins, minerals, and phytonutrients.</p>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">🌈</div>
+      </div>
+
+      <div class="plate-zone" style="direction: rtl;">
+        <div style="text-align: center; font-size: 4rem;">💧</div>
+        <div class="zone-card" style="border-left: 4px solid #3498DB;">
+          <div class="zone-title" style="color: #3498DB;">💧 Hydration</div>
+          <p><strong>What counts:</strong> Water (always best), milk, herbal tea, or foods with high water content (watermelon, cucumber, lettuce).</p>
+          <p><strong>Why it matters:</strong> Our brains, bodies, and energy depend on hydration.</p>
+          <p><strong>Visual: Water glass with the meal</strong></p>
+        </div>
+      </div>
+
+      <div class="plate-zone">
+        <div class="zone-card fat-zone">
+          <div class="zone-title">🥑 Healthy Fats</div>
+          <p><strong>What goes here:</strong> Olive oil, avocado, nuts, seeds, fatty fish, coconut.</p>
+          <p><strong>Why it matters:</strong> Healthy fats support brain development, hormone health, and nutrient absorption.</p>
+          <p><strong>Visual: A drizzle of oil, a sprinkle of nuts, or a slice of avocado</strong></p>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">🥑</div>
+      </div>
+
+      <div class="plate-section">
+        <h2 style="color: var(--color-primary);">How to Teach the Happy Plate</h2>
+        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0;">
+          <p><strong>Make it Visual:</strong> Don't talk numbers. Say: "Let's make a rainbow plate!" or "Can you find a green veggie?"</p>
+        </div>
+        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0;">
+          <p><strong>Make it Fun:</strong> "We're building a happy plate together. What colors should we add?"</p>
+        </div>
+        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0;">
+          <p><strong>Make it Positive:</strong> Never shame. Instead: "Wow, you chose 4 colors today! Your body is happy!"</p>
+        </div>
+        <div style="background: var(--color-light); padding: 2rem; border-radius: 12px; margin: 1.5rem 0;">
+          <p><strong>Make it Flexible:</strong> Some days a plate is a sandwich + fruit. Some days it's a bowl. What matters is the balance, not the presentation.</p>
+        </div>
+      </div>
+
+      <div class="plate-section" style="background: linear-gradient(135deg, var(--color-light), white); padding: 2rem; border-radius: 12px;">
+        <h2 style="margin-top: 0; color: var(--color-primary);">What Happy Plate is NOT</h2>
+        <ul style="font-size: 1.05rem; line-height: 1.8;">
+          <li>❌ NOT about counting calories or "good" vs "bad" foods</li>
+          <li>❌ NOT about restriction or food fear</li>
+          <li>❌ NOT about body size or weight</li>
+          <li>❌ NOT about perfection (a bowl of pasta is okay; it's one meal, not a lifetime habit)</li>
+          <li>❌ NOT about rigid rules</li>
+        </ul>
+        <ul style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.5rem;">
+          <li>✅ ABOUT building intuitive eating skills</li>
+          <li>✅ ABOUT enjoying food and family</li>
+          <li>✅ ABOUT understanding nutrition visually</li>
+          <li>✅ ABOUT raising kids who can feed themselves well</li>
+          <li>✅ ABOUT joy, not guilt</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: var(--color-dark); color: white; padding: 2rem; text-align: center; margin-top: 4rem;">
+    <p>&copy; 2026 ChildsFood.com | Raising Happy, Healthy Eaters</p>
+  </footer>
+</body>
+</html>
