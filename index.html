@@ -113,7 +113,8 @@
 
       <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
         <a href="#explore" class="active">Explore</a>
-        <a href="#meal-planner">Meal Planner</a>
+        <a href="#smart-recommendations">Recipe Finder</a>
+        <a href="#weekly-planner">Meal Planner</a>
         <a href="#world-map">World Map</a>
         <a href="#academy">Kid Chef</a>
         <a href="#stories">Stories</a>
@@ -135,9 +136,11 @@
   <!-- Mobile Navigation -->
   <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
     <a href="#explore">Explore</a>
-    <a href="#meal-planner">Meal Planner</a>
+    <a href="#smart-recommendations">Recipe Finder</a>
+    <a href="#weekly-planner">Meal Planner</a>
     <a href="#world-map">World Map</a>
     <a href="#academy">Kid Chef Academy</a>
+    <a href="#exposure-tracker">Food Tracker</a>
     <a href="#stories">Stories</a>
     <a href="#budget">Budget Plans</a>
     <div class="lang-switcher" style="margin-top:var(--space-lg)">
@@ -655,8 +658,19 @@
           <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Discover kid-friendly recipes from diverse cuisines. Each recipe is tested, budget-friendly, and built for young chefs to enjoy making.</p>
         </div>
 
+        <div id="recipe-filters">
+          <button class="filter-btn active" data-filter="cuisine" data-value="all">All Cuisines</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Asian">Asian</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Mexican">Mexican</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Mediterranean">Mediterranean</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="African">African</button>
+          <button class="filter-btn" data-filter="cuisine" data-value="Middle Eastern">Middle Eastern</button>
+          <button class="filter-btn" data-filter="diet" data-value="vegan">Vegan</button>
+          <button class="filter-btn" data-filter="diet" data-value="vegetarian">Vegetarian</button>
+        </div>
+
         <div class="grid grid-3 stagger-children" style="margin-bottom:var(--space-2xl)">
-          <div class="recipe-card">
+          <div class="recipe-card" data-cuisine="Middle Eastern" data-diet="vegetarian,vegan">
             <div class="recipe-card-header" style="background: linear-gradient(135deg, #27AE60, #1ABC9C);">
               <div class="recipe-flag">🌍</div>
               <div class="recipe-cuisine">Middle Eastern</div>
@@ -1107,6 +1121,125 @@
       </div>
     </section>
 
+    <!-- ============ SMART RECOMMENDATION ENGINE ============ -->
+    <section class="section-lg" id="smart-recommendations">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-primary)">Personalized Picks</p>
+          <h2 class="text-h1">Smart Recipe Finder</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Tell us your child's age, dietary needs, budget, and time constraints. We'll find the perfect recipes from our global collection.</p>
+        </div>
+
+        <form id="rec-form">
+          <div>
+            <label for="rec-age">Child's Age</label>
+            <input type="number" name="rec-age" id="rec-age" min="3" max="12" value="6" required>
+          </div>
+          <div>
+            <label for="rec-diet">Diet</label>
+            <select name="rec-diet" id="rec-diet">
+              <option value="any">Any</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+            </select>
+          </div>
+          <div>
+            <label for="rec-time">Max Cook Time (min)</label>
+            <input type="number" name="rec-time" id="rec-time" min="10" max="120" value="30">
+          </div>
+          <div>
+            <label for="rec-cost">Max Cost ($)</label>
+            <input type="number" name="rec-cost" id="rec-cost" min="1" max="20" value="7">
+          </div>
+          <div>
+            <label for="rec-cuisine">Cuisine</label>
+            <select name="rec-cuisine" id="rec-cuisine">
+              <option value="any">Any Cuisine</option>
+              <option value="Asian">Asian</option>
+              <option value="Thai">Thai</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Korean">Korean</option>
+              <option value="Vietnamese">Vietnamese</option>
+              <option value="Indian">Indian</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Brazilian">Brazilian</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="Italian">Italian</option>
+              <option value="Greek">Greek</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Turkish">Turkish</option>
+              <option value="Lebanese">Lebanese</option>
+              <option value="Moroccan">Moroccan</option>
+              <option value="West African">West African</option>
+              <option value="Egyptian">Egyptian</option>
+              <option value="Middle Eastern">Middle Eastern</option>
+            </select>
+          </div>
+          <div>
+            <label for="rec-meal">Meal Type</label>
+            <select name="rec-meal" id="rec-meal">
+              <option value="any">Any Meal</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+              <option value="snack">Snack</option>
+            </select>
+          </div>
+          <div>
+            <label>Avoid Allergens</label>
+            <div class="rec-allergens">
+              <label><input type="checkbox" name="rec-allergen" value="dairy"> Dairy</label>
+              <label><input type="checkbox" name="rec-allergen" value="gluten"> Gluten</label>
+              <label><input type="checkbox" name="rec-allergen" value="eggs"> Eggs</label>
+              <label><input type="checkbox" name="rec-allergen" value="soy"> Soy</label>
+              <label><input type="checkbox" name="rec-allergen" value="peanuts"> Peanuts</label>
+              <label><input type="checkbox" name="rec-allergen" value="fish"> Fish</label>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-end;">
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Find Recipes</button>
+          </div>
+        </form>
+
+        <div id="rec-results"></div>
+      </div>
+    </section>
+
+    <!-- ============ INTERACTIVE WEEKLY PLANNER ============ -->
+    <section class="section-lg" id="weekly-planner">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-secondary)">Plan Your Week</p>
+          <h2 class="text-h1">Interactive Weekly Meal Planner</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Click any slot to add a recipe. Your plan saves automatically and generates a grocery list.</p>
+        </div>
+
+        <div id="planner-grid"></div>
+        <div id="planner-stats" class="planner-stats-row"></div>
+
+        <div class="text-center" style="margin-top:var(--space-xl)">
+          <button id="clear-plan" class="btn btn-outline">Clear Plan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GROCERY LIST GENERATOR ============ -->
+    <section class="section-lg" id="grocery-list">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-green)">Auto-Generated</p>
+          <h2 class="text-h1">Your Grocery List</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Based on your meal plan. Check items off as you shop. Print for the store.</p>
+        </div>
+
+        <div class="grocery-actions">
+          <button id="print-grocery" class="btn btn-secondary">Print Grocery List</button>
+        </div>
+
+        <div id="grocery-items" style="max-width:700px;margin:0 auto;"></div>
+      </div>
+    </section>
+
     <!-- ============ COOKING ACADEMY TIMELINE ============ -->
     <section class="academy-section section-lg" id="academy">
       <div class="container">
@@ -1227,6 +1360,35 @@
             <h4 style="color:var(--color-white);margin-bottom:var(--space-sm)">&#128155; Zero Shame</h4>
             <p style="opacity:0.85;font-size:0.95rem">No guilt, no calorie obsession, no "good" or "bad" foods. Just balance, joy, and curiosity about real food.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOD EXPOSURE TRACKER ============ -->
+    <section class="section-lg" id="exposure-tracker">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--space-2xl)">
+          <p class="text-caption" style="color:var(--color-purple)">Track Food Adventures</p>
+          <h2 class="text-h1">Food Exposure Tracker</h2>
+          <p class="text-body-lg" style="color:var(--color-dark-gray);max-width:650px;margin:var(--space-md) auto 0">Track your child's journey with new foods using the 6-step exposure ladder. Every step counts!</p>
+        </div>
+
+        <div style="max-width:700px;margin:0 auto;">
+          <form id="exposure-add-form">
+            <input type="text" id="exposure-food-input" placeholder="Food name (e.g., Broccoli)" required>
+            <select id="exposure-level">
+              <option value="0">1 - Saw It</option>
+              <option value="1">2 - Smelled It</option>
+              <option value="2">3 - Touched It</option>
+              <option value="3">4 - Tasted It</option>
+              <option value="4">5 - Ate Some</option>
+              <option value="5">6 - Enjoyed It!</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Add Food</button>
+          </form>
+
+          <div id="exposure-list"></div>
+          <div id="exposure-stats" class="exposure-stats-row"></div>
         </div>
       </div>
     </section>
@@ -1400,9 +1562,10 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <a href="#explore">7 Pillars</a>
+          <a href="#smart-recommendations">Recipe Finder</a>
+          <a href="#weekly-planner">Meal Planner</a>
           <a href="#world-map">World Food Map</a>
           <a href="#cuisines">Cuisines</a>
-          <a href="#meal-planner">Meal Planner</a>
           <a href="#budget">Budget Plans</a>
         </div>
 
@@ -1410,9 +1573,9 @@
           <h4>Learn</h4>
           <a href="#academy">Kid Chef Academy</a>
           <a href="#happy-plate">Happy Plate</a>
+          <a href="#exposure-tracker">Food Tracker</a>
           <a href="#stories">Stories & Research</a>
           <a href="#">Nutrition Guides</a>
-          <a href="#">Picky Eating Help</a>
         </div>
 
         <div class="footer-col">
@@ -1436,5 +1599,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/features.js"></script>
 </body>
 </html>
